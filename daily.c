@@ -1,44 +1,41 @@
 #include <stdio.h>
 #include<math.h>
 
-//print name given by user
+// Day 1
 
+//print name given by user
 // int main() {
 // char name[100];
 // printf("enter your name:");
 // scanf("%s", &name);
-
 // printf("your name is : %s", name );
 // return 0;
 // }
 
-//area of a square
 
+//area of a square
 // int main() {
 //     float side;
 //     printf("enter the side of a square :");
 //     scanf("%f", &side);
-
 //     printf("area of a square is : %f", side*side);
 // }
 
-//area of a circle
 
+//area of a circle
 // int main() {
 //     float r;
 //     printf("enter the radius of a circle:");
 //     scanf("%f", &r);
-    
 //     printf("area of a circle is : %f", 3.14*r*r);
 // } 
 
-//check that number divisible by 2 or not
 
+//check that number divisible by 2 or not
 // int main() {
 //     int n;
 //     printf("enter any number:");
 //     scanf("%d", &n);
-
 //     if(n%2 == 0) {
 //         printf("number is divisible by 2");
 //     }
@@ -47,6 +44,8 @@
 //     }
 // }
 
+
+// print average of 3 number input by user
 // int main() {
 //     float a,b,c;
 //     float avg;
@@ -56,13 +55,14 @@
 //     scanf("%f", &b);
 //     printf("enter c : ");
 //     scanf("%f", &c);
-
 //     avg = (a+b+c)/3;
 //     printf("the average of the numbers is %f", avg);
 // }
 
-// write a program to check that given charecter is digit or not
+// DAY 2
 
+
+// write a program to check that given charecter is digit or not
 // int main() {
 //    char ch;
 //    printf("enter any charecter: ");
@@ -76,6 +76,7 @@
 //    return 0;
 //    }
 
+
 // to print the smallest number
 // int main() {
 //     float a,b,c;
@@ -85,10 +86,8 @@
 //     scanf("%f", &b);
 //     printf("enter c: ");
 //     scanf("%f", &c);
-
 //     if(a<b && a<c) {
 //         printf("smallest value is %f" , a);
-
 //     } 
 //     else if(b<a && b<c) {
 //         printf("smallest value is %f ", b );
@@ -97,6 +96,7 @@
 //         printf("smallest value is %f", c);
 // }
 // }
+
 
 // to check upper case or lower case
 // int main() {
@@ -107,17 +107,18 @@
 //     return 0;
 // }
 
+
 // printing the numbers from 0 to n, if n is given by user
 // int main() {
 //     int n;
 //     printf("enter n:");
 //     scanf("%d",&n);
-    
 //     for(int i=0; i<=n;i++) {
 //         printf("%d\n", i);
 //     }
 //     return 0;
 // }
+
 
 // print the sum of first n natural number 
 // int main() {
@@ -131,6 +132,10 @@
 //     printf("%d", m);
 //     return 0;
 // }
+
+// DAY 3
+
+
 // print the table of a number input by the user
 // int main() {
 //     int n,i,m;
@@ -142,6 +147,7 @@
 //     }    
 //     return 0;
 // }
+
 
 // keep taking number as input from the user until user enters an odd number
 // int main() {
@@ -156,8 +162,8 @@
 //     }while (1);
 //     printf("thank you");
 //     return 0;
-
 // }
+
 
 // print all no 1-10 except 6
 // int main() {
@@ -170,6 +176,7 @@
 //   return 0 ;
 // }
 
+
 // print all the odd number from 5 to 50 
 // int main() {
 //   for(int i = 5; i<=50 ; i++){
@@ -180,6 +187,7 @@
 //   }
 //   return 0;
 // }
+
 
 // print the factorial of number n
 // int main() {
@@ -193,6 +201,9 @@
 //   return 0;
 // }
  
+// DAY 4
+
+
 // print reverse of the table n
 // int main() {
 //     int n,m;
@@ -205,6 +216,7 @@
 //     return 0;
 // } 
 
+
 // calculate the sum of all number b/w 5 to 50
 // int main() {
 //     int n=0;
@@ -214,6 +226,7 @@
 //  printf("%d", n);
 // return 0;
 // }
+
 
 // write 2 function one to print hello and second to print good bye 
 //     void printHello();
@@ -229,6 +242,7 @@
 // void printgb() {
 //     printf("Good Bye!!");
 // }
+
 
 // write a function that print Namaste if user is Indian and Bonjour if the user is french 
 // void printNamaste();
@@ -255,6 +269,7 @@
 //     printf("Bonjour");
 // }
 
+
 // use library function to calculate the sq of a number given by user 
 // int main() {
 //     int n;
@@ -263,6 +278,9 @@
 //     printf("square is %f", pow(n,2));
 //     return 0;
 // }
+
+// DAY 5
+
 
 // print hello world n times using functions
 // void printhw(int count);
@@ -277,6 +295,7 @@
 //     printf("Hello World\n");
 //     printhw(count-1);
 // }
+
 
 // sum of first n natural number 
 // int sum(int n);
@@ -293,6 +312,7 @@
 //     return sumN;
 // }
 
+
 // factorial of n
 // int fac(int n);
 // int main() {
@@ -307,6 +327,7 @@
 //     return facn;
 // }
 
+
 // write a function to convert celsius to fahrenheit
 // float celtof(float c);
 // int main() {
@@ -318,6 +339,7 @@
 //     float f = c*(9/5) + 32;
 //     return f;
 // }
+
 
 // write a function to calculate percentage of a student from marks in science maths sanskrit
 // int perc(float x, float y, float z);
@@ -338,6 +360,7 @@
 //     return per; 
 // }
 
+// DAY 6
 // write a function to print n terms of the fibonacci sequence
 // int fibN(int n);
 
@@ -348,6 +371,7 @@
 // printf("%d", fibN(a));
 // return 0;
 // }
+
 
 // int fibN(int n) {
 //     if(n==0) {
@@ -361,6 +385,7 @@
 //    int fibN = fibNm1 + fibNm2 ;
 //     return fibN ;
 // }
+
 
 // fibonacci sequence with loop
 // int main() {
@@ -381,5 +406,6 @@
 //     }
 //    return 0;    
 // }
+
 
 // 
