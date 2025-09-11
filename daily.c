@@ -408,4 +408,34 @@
 // }
 
 
-// 
+// check prime using function
+#include<stdio.h>
+
+int isprime(int a);
+
+int main() {
+int b;
+printf("Enter the number :- ");
+scanf("%d",&b);
+isprime(b);
+return 0;
+}
+
+int isprime(int a) {
+    int i,flag;
+    for(i=2;i<=a/2;i++) {
+      if(a%i!=0) {
+        flag=0;
+      }
+      else {
+        flag+=1;
+      }
+    }
+if(flag<=1) {
+    printf("number is not prime");
+}
+else {
+    printf("number is prime");
+}
+return 0;
+}
