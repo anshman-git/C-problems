@@ -407,11 +407,8 @@
 //    return 0;    
 // }
 
-
-// check prime using function
-#include<stdio.h>
-
-int isprime(int a);
+// check prime using function 
+void isprime(int a);
 
 int main() {
 int b;
@@ -421,21 +418,22 @@ isprime(b);
 return 0;
 }
 
-int isprime(int a) {
-    int i,flag;
-    for(i=2;i<=a/2;i++) {
-      if(a%i!=0) {
-        flag=0;
-      }
-      else {
-        flag+=1;
-      }
+void isprime(int a) {
+    int i,flag=0;
+     if (a <= 1) {
+        printf("Number is not prime");
+        return;
     }
-if(flag<=1) {
-    printf("number is not prime");
-}
-else {
-    printf("number is prime");
-}
-return 0;
+    for(i=2;i<=a/2;i++) {
+      if (a % i == 0) {
+            flag = 1;
+            break;
+        }
+    }
+ if (flag == 0) {
+        printf("Number is prime");
+    } else {
+        printf("Number is not prime");
+    }
+return;
 }
