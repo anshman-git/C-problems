@@ -408,32 +408,51 @@
 // }
 
 // check prime using function 
-void isprime(int a);
+// void isprime(int a);
 
+// int main() {
+// int b;
+// printf("Enter the number :- ");
+// scanf("%d",&b);
+// isprime(b);
+// return 0;
+// }
+
+// void isprime(int a) {
+//     int i,flag=0;
+//      if (a <= 1) {
+//         printf("Number is not prime");
+//         return;
+//     }
+//     for(i=2;i<=a/2;i++) {
+//       if (a % i == 0) {
+//             flag = 1;
+//             break;
+//         }
+//     }
+//  if (flag == 0) {
+//         printf("Number is prime");
+//     } else {
+//         printf("Number is not prime");
+//     }
+// return;
+// }
+
+// pow function
+int powe(int a, int b);
 int main() {
-int b;
-printf("Enter the number :- ");
-scanf("%d",&b);
-isprime(b);
-return 0;
+    int a,b;
+    printf("enter number:-");
+    scanf("%d",&a);
+    printf("enter power:-");
+    scanf("%d",&b);
+    printf("result is : %d",powe(a,b));
+    return 0;
 }
-
-void isprime(int a) {
-    int i,flag=0;
-     if (a <= 1) {
-        printf("Number is not prime");
-        return;
+int powe(int a, int b) {
+    int c=1;
+    for(int i=1;i<=b;i++) {
+        c = c * a ;
     }
-    for(i=2;i<=a/2;i++) {
-      if (a % i == 0) {
-            flag = 1;
-            break;
-        }
-    }
- if (flag == 0) {
-        printf("Number is prime");
-    } else {
-        printf("Number is not prime");
-    }
-return;
+    return c;
 }
