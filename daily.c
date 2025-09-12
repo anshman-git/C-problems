@@ -439,20 +439,38 @@
 // }
 
 // pow function
-int powe(int a, int b);
+// int powe(int a, int b);
+// int main() {
+//     int a,b;
+//     printf("enter number:-");
+//     scanf("%d",&a);
+//     printf("enter power:-");
+//     scanf("%d",&b);
+//     printf("result is : %d",powe(a,b));
+//     return 0;
+// }
+// int powe(int a, int b) {
+//     int c=1;
+//     for(int i=1;i<=b;i++) {
+//         c = c * a ;
+//     }
+//     return c;
+// }
+
+// Write a C program using a function int reverse(int n) that takes an integer n as input and returns its reverse
+int reverse(int n);
 int main() {
-    int a,b;
-    printf("enter number:-");
-    scanf("%d",&a);
-    printf("enter power:-");
-    scanf("%d",&b);
-    printf("result is : %d",powe(a,b));
-    return 0;
+int n;
+printf("Enter number to reverse:");
+scanf("%d",&n);
+printf("reversed number is %d",reverse(n));
+return 0;
 }
-int powe(int a, int b) {
-    int c=1;
-    for(int i=1;i<=b;i++) {
-        c = c * a ;
+int reverse(int n) {
+    int rev=0;
+    for(; n > 0; n /= 10) {
+        int digit = n%10;
+        rev = rev*10+digit;
     }
-    return c;
+    return rev;
 }
