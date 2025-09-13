@@ -474,12 +474,30 @@
 // }
 
 // print the value of i using pointer to pointer 
-int main() {
-  int i;
-  printf("Enter i:");
-  scanf("%d",&i);
-  int *ptr = &i;
-  int **pptr = &ptr;
-  printf("%d",**pptr) ;
-  return 0;
-}
+// int main() {
+//   int i;
+//   printf("Enter i:");
+//   scanf("%d",&i);
+//   int *ptr = &i;
+//   int **pptr = &ptr;
+//   printf("%d",**pptr) ;
+//   return 0;
+// }
+
+// swap x and y using pointer
+// void _swap(int *a,int *b);
+// int main() {
+// int x,y;
+// printf("Enter x:");
+// scanf("%d",&x);
+// printf("Enter y:");
+// scanf("%d",&y);
+// _swap(&x,&y);
+// printf("x is %d and y is %d", x,y);
+//   return 0;
+// }
+// void _swap(int *a, int *b) {
+// int t=*a;
+// *a=*b;
+// *b=t;
+// }
