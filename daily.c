@@ -371,8 +371,6 @@
 // printf("%d", fibN(a));
 // return 0;
 // }
-
-
 // int fibN(int n) {
 //     if(n==0) {
 //         return 0;
@@ -458,19 +456,30 @@
 // }
 
 // Write a C program using a function int reverse(int n) that takes an integer n as input and returns its reverse
-int reverse(int n);
+// int reverse(int n);
+// int main() {
+// int n;
+// printf("Enter number to reverse:");
+// scanf("%d",&n);
+// printf("reversed number is %d",reverse(n));
+// return 0;
+// }
+// int reverse(int n) {
+//     int rev=0;
+//     for(; n > 0; n /= 10) {
+//         int digit = n%10;
+//         rev = rev*10+digit;
+//     }
+//     return rev;
+// }
+
+// print the value of i using pointer to pointer 
 int main() {
-int n;
-printf("Enter number to reverse:");
-scanf("%d",&n);
-printf("reversed number is %d",reverse(n));
-return 0;
-}
-int reverse(int n) {
-    int rev=0;
-    for(; n > 0; n /= 10) {
-        int digit = n%10;
-        rev = rev*10+digit;
-    }
-    return rev;
+  int i;
+  printf("Enter i:");
+  scanf("%d",&i);
+  int *ptr = &i;
+  int **pptr = &ptr;
+  printf("%d",**pptr) ;
+  return 0;
 }
