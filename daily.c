@@ -516,3 +516,22 @@
 // *prod=a*b;
 // *avg=(a+b)/2;
 // }
+
+// write a program in c to find the maximum number b/w two number using pointer
+// void max(int *a,int *b);
+// int main() {
+// int a,b;
+// printf("Enter a:");
+// scanf("%d",&a);
+// printf("Enter b:");
+// scanf("%d",&b);
+// max(&a,&b);
+// }
+// void max(int *a,int *b) {
+//   if(*a>*b) {
+//     printf("a is greater");
+//   }
+//   else {
+//     printf("b is greater");
+//   }
+// }
