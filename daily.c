@@ -535,6 +535,7 @@
 //   }
 // }
 
+
 // print element of array in reverse
 
 
@@ -565,13 +566,31 @@
 //     return 0;
 // }
 
+
 // write a program to enter price of 3 items and print their final cost with gst using array
-int main() {
-    int price[3];
-    printf("Enter 3 price: ");
-    scanf("%d %d %d",&price[0],&price[1],&price[2]);
-    printf("Price of 1 = %f\n",price[0]+(0.18*price[0]));
-    printf("Price of 2 = %f\n",price[1]+(0.18*price[1]));
-    printf("Price of 3 = %f\n",price[2]+(0.18*price[2]));
-    return 0;
-}
+// int main() {
+//     int price[3];
+//     printf("Enter 3 price: ");
+//     scanf("%d %d %d",&price[0],&price[1],&price[2]);
+//     printf("Price of 1 = %f\n",price[0]+(0.18*price[0]));
+//     printf("Price of 2 = %f\n",price[1]+(0.18*price[1]));
+//     printf("Price of 3 = %f\n",price[2]+(0.18*price[2]));
+//     return 0;
+// }
+
+
+// write a function to count the no of odd number in an array
+// int count(int arr[],int n);
+// int main() {
+// int arr[] = {1,2,3,4,5,6};
+// printf("%d",count(arr,6));
+// }
+// int count(int arr[],int n) {
+//   int count=0;
+//   for(int i=0;i<n;i++) {
+//     if(arr[i] % 2 !=0) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
