@@ -62,7 +62,7 @@
 // DAY 2
 
 
-// write a program to check that given charecter is digit or not
+// check that given charecter is digit or not
 // int main() {
 //    char ch;
 //    printf("enter any charecter: ");
@@ -363,7 +363,6 @@
 // DAY 6
 // write a function to print n terms of the fibonacci sequence
 // int fibN(int n);
-
 // int main() {
 //     int a;
 // printf("Enter number n:");
@@ -407,7 +406,6 @@
 
 // check prime using function 
 // void isprime(int a);
-
 // int main() {
 // int b;
 // printf("Enter the number :- ");
@@ -415,7 +413,6 @@
 // isprime(b);
 // return 0;
 // }
-
 // void isprime(int a) {
 //     int i,flag=0;
 //      if (a <= 1) {
@@ -473,6 +470,8 @@
 //     return rev;
 // }
 
+
+// Day 7
 // print the value of i using pointer to pointer 
 // int main() {
 //   int i;
@@ -535,3 +534,35 @@
 //     printf("b is greater");
 //   }
 // }
+
+// print element of array in reverse
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// print all the letter in english alphabet using pointer 
+int main() {
+  int a[26];
+  int *ptr=a;
+      for (int i = 0; i < 26; i++) {
+        *(ptr + i) = 'A' + i;
+    }
+   for (int i = 0; i < 26; i++) {
+        printf("%c \n", *(ptr + i));
+    }
+    return 0;
+}
+
+// write a program to enter price of 3 items and print their final cost with gst
