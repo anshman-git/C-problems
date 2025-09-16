@@ -622,19 +622,40 @@
 // }
 
 // write a program to store the first n fibonacci number
-int main() {
-int n;
-printf("Enter n:");
-scanf("%d",&n);
+// int main() {
+// int n;
+// printf("Enter n:");
+// scanf("%d",&n);
+// int fib[n];
+// fib[0]=0;
+// fib[1]=1;
+// printf("%d\t",fib[0]);
+// printf("%d\t",fib[1]);
+// for(int i=2;i<n;i++) {
+//     fib[i]=fib[i-1] + fib[i-2];
+//     printf("%d\t",fib[i]);
+// }
+// printf("\n");
+// }
 
-int fib[n];
-fib[0]=0;
-fib[1]=1;
-printf("%d\t",fib[0]);
-printf("%d\t",fib[1]);
-for(int i=2;i<n;i++) {
-    fib[i]=fib[i-1] + fib[i-2];
-    printf("%d\t",fib[i]);
-}
-printf("\n");
-}
+
+// create a 2d array storing the table of 2 and 3
+// void table(int arr[][10],int n,int m,int num);
+// int main() {
+// int tab[2][10],m,n;
+// table(tab,0,10,2);
+// table(tab,1,10,3);
+// for(int i=0;i<10;i++) {
+//     printf("%d\t",tab[0][i]);
+// }
+// printf("\n");
+// for(int i=0;i<10;i++) {
+//     printf("%d\t",tab[1][i]);
+// }
+// return 0;
+// }
+// void table(int arr[][10],int n,int m,int num) {
+// for(int i=0;i<m;i++) {
+//     arr[n][i] = num * (i+1);
+// }
+// }
