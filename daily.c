@@ -596,34 +596,45 @@
 // }
 
 // write a function to reverse an array
-#include <stdio.h>
+// void rev(int arr[], int n);
+// int main() {
+//     int n;
+//     printf("Enter size of array: ");
+//     scanf("%d", &n);
+//     int arr[n];
+//     printf("Enter array values:\n");
+//     for(int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+//     rev(arr, n);
+//     printf("Reversed array:\n");
+//     for(int i = 0; i < n; i++) {
+//         printf("%d ", arr[i]);
+//     }
+//     return 0;
+// }
+// void rev(int arr[], int n) {
+//     for(int i = 0; i < n/2; i++) {
+//         int temp = arr[i];
+//         arr[i] = arr[n-i-1];
+//         arr[n-i-1] = temp;
+//     }
+// }
 
-void rev(int arr[], int n);
-
+// write a program to store the first n fibonacci number
 int main() {
-    int n;
-    printf("Enter size of array: ");
-    scanf("%d", &n);
+int n;
+printf("Enter n:");
+scanf("%d",&n);
 
-    int arr[n];
-    printf("Enter array values:\n");
-    for(int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    rev(arr, n);
-
-    printf("Reversed array:\n");
-    for(int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
-    }
-    return 0;
+int fib[n];
+fib[0]=0;
+fib[1]=1;
+printf("%d\t",fib[0]);
+printf("%d\t",fib[1]);
+for(int i=2;i<n;i++) {
+    fib[i]=fib[i-1] + fib[i-2];
+    printf("%d\t",fib[i]);
 }
-
-void rev(int arr[], int n) {
-    for(int i = 0; i < n/2; i++) {
-        int temp = arr[i];
-        arr[i] = arr[n-i-1];
-        arr[n-i-1] = temp;
-    }
+printf("\n");
 }
