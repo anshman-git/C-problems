@@ -552,6 +552,7 @@
 
 
 
+// DAY 8
 
 // print all the letter in english alphabet using pointer 
 // int main() {
@@ -639,6 +640,7 @@
 // }
 
 
+// DAY 9
 // create a 2d array storing the table of 2 and 3
 // void table(int arr[][10],int n,int m,int num);
 // int main() {
@@ -659,3 +661,21 @@
 //     arr[n][i] = num * (i+1);
 // }
 // }
+
+// create a string to store first ans last name of the user and print all the charector in loop
+void printString(char arr[]);
+int main() {
+char firstName[] = "Anshman";
+char lastName[] = "Khare";
+
+printString(firstName);
+printString(lastName);
+
+return 0;
+}
+void printString(char arr[]) {
+    for(int i=0; arr[i] != '\0';i++) {
+        printf("%c", arr[i]);
+    }
+    printf("\n");
+}
