@@ -682,9 +682,9 @@
 
 
 // write the full name of the user
-int main() {
-    char str[100];
-    gets(str);
-    puts(str);
-    return 0;
-}
+// int main() {
+//     char str[100];
+//     gets(str);
+//     puts(str);
+//     return 0;
+// }
