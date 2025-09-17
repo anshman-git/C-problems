@@ -663,19 +663,28 @@
 // }
 
 // create a string to store first ans last name of the user and print all the charector in loop
-void printString(char arr[]);
+// void printString(char arr[]);
+// int main() {
+// char firstName[] = "Anshman";
+// char lastName[] = "Khare";
+
+// printString(firstName);
+// printString(lastName);
+
+// return 0;
+// }
+// void printString(char arr[]) {
+//     for(int i=0; arr[i] != '\0';i++) {
+//         printf("%c", arr[i]);
+//     }
+//     printf("\n");
+// }
+
+
+// write the full name of the user
 int main() {
-char firstName[] = "Anshman";
-char lastName[] = "Khare";
-
-printString(firstName);
-printString(lastName);
-
-return 0;
-}
-void printString(char arr[]) {
-    for(int i=0; arr[i] != '\0';i++) {
-        printf("%c", arr[i]);
-    }
-    printf("\n");
+    char str[100];
+    gets(str);
+    puts(str);
+    return 0;
 }
