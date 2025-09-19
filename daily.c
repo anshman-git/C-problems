@@ -708,12 +708,44 @@
 
 
 // make a program that input user name and print its length using string
-int main() {
-    char a[100];
-   
-    printf("Enter the charectar to check the length : ");
-    scanf(" %s",a); 
-    int length = strlen(a);
-    printf("length = %d",length);
+// int main() {
+//     char a[100];
+//     printf("Enter the charectar to check the length : ");
+//     scanf(" %s",a); 
+//     int length = strlen(a);
+//     printf("length = %d",length);
+// }
 
+
+// take a string input from user using %c
+// int main() {
+//     char a[100];
+//     char ch;
+//     int i=0;
+
+//     while(ch !='\n') {
+//         scanf("%c",&ch);
+//         a[i]= ch;
+//         i++;
+//     }
+//     a[i] = '\0';
+//     puts(a);
+//     return 0;
+// }
+
+
+// Salting 
+// find the salted form of a password enter by a user if the salt is 123 and added to the end
+void salting(char pass[]);
+int main() {
+char pass[100];
+scanf("%s",&pass);
+salting(pass);
+}
+void salting(char pass[]) {
+    char slat[] = "123";
+    char newpass[100];
+    strcpy(newpass,pass);
+    strcat(newpass,slat);
+    puts(newpass);
 }
