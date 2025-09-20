@@ -663,6 +663,7 @@
 // }
 // }
 
+
 // create a string to store first ans last name of the user and print all the charector in loop
 // void printString(char arr[]);
 // int main() {
@@ -690,6 +691,7 @@
 //     return 0;
 // }
 
+
 // make a program that input user name and print its length
 // int countLength(char arr[]);
 // int main() {
@@ -707,6 +709,7 @@
 // }
 
 
+
 // make a program that input user name and print its length using string
 // int main() {
 //     char a[100];
@@ -717,6 +720,7 @@
 // }
 
 
+// Day 10
 // take a string input from user using %c
 // int main() {
 //     char a[100];
@@ -736,16 +740,63 @@
 
 // Salting 
 // find the salted form of a password enter by a user if the salt is 123 and added to the end
-void salting(char pass[]);
+// void salting(char pass[]);
+// int main() {
+// char pass[100];
+// scanf("%s",&pass);
+// salting(pass);
+// }
+// void salting(char pass[]) {
+//     char slat[] = "123";
+//     char newpass[100];
+//     strcpy(newpass,pass);
+//     strcat(newpass,slat);
+//     puts(newpass);
+// }
+
+
+// print all Palindrome Words in a Sentence
+int ispali(char str[]);
+
 int main() {
-char pass[100];
-scanf("%s",&pass);
-salting(pass);
+char sent[100];
+printf("Enter a sentence:");
+fgets(sent, sizeof(sent), stdin);
+
+sent[strcspn(sent, "\n")] = 0;
+
+char word[50];
+int k=0;
+for(int i=0; sent[i] != '\0'; i++) {
+    if(sent[i] != ' ') {
+        word[k++] = sent[i];
+    }
+    else {
+        word[k++] = '\0';
+        if(ispali(word)) {
+            printf("%s ",word); 
+        }
+        k=0;
+    }
 }
-void salting(char pass[]) {
-    char slat[] = "123";
-    char newpass[100];
-    strcpy(newpass,pass);
-    strcat(newpass,slat);
-    puts(newpass);
+
+word[k] = '\0';
+if(ispali(word)) {
+    printf("%s ",word);
+}
+
+return 0;
+}
+
+int ispali(char str[]) {
+int i=0;
+int j=strlen(str)-1;
+while(i<j) {
+    if(str[i]!= str[j]) {
+        return 0;
+    }
+    i++;
+    j--;
+}
+return 1;
 }
