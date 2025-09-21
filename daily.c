@@ -756,47 +756,73 @@
 
 
 // print all Palindrome Words in a Sentence
-int ispali(char str[]);
+// int ispali(char str[]);
 
-int main() {
-char sent[100];
-printf("Enter a sentence:");
-fgets(sent, sizeof(sent), stdin);
+// int main() {
+// char sent[100];
+// printf("Enter a sentence:");
+// fgets(sent, sizeof(sent), stdin);
 
-sent[strcspn(sent, "\n")] = 0;
+// sent[strcspn(sent, "\n")] = 0;
 
-char word[50];
-int k=0;
-for(int i=0; sent[i] != '\0'; i++) {
-    if(sent[i] != ' ') {
-        word[k++] = sent[i];
-    }
-    else {
-        word[k++] = '\0';
-        if(ispali(word)) {
-            printf("%s ",word); 
+// char word[50];
+// int k=0;
+// for(int i=0; sent[i] != '\0'; i++) {
+//     if(sent[i] != ' ') {
+//         word[k++] = sent[i];
+//     }
+//     else {
+//         word[k++] = '\0';
+//         if(ispali(word)) {
+//             printf("%s ",word); 
+//         }
+//         k=0;
+//     }
+// }
+
+// word[k] = '\0';
+// if(ispali(word)) {
+//     printf("%s ",word);
+// }
+
+// return 0;
+// }
+
+// int ispali(char str[]) {
+// int i=0;
+// int j=strlen(str)-1;
+// while(i<j) {
+//     if(str[i]!= str[j]) {
+//         return 0;
+//     }
+//     i++;
+//     j--;
+// }
+// return 1;
+// }
+
+// count vovels and consonant
+
+int main () {
+    int vovels=0,consonants=0;
+    char chr[100];
+    printf("Enter the sentence : ");
+    fgets(chr,sizeof(chr),stdin);
+
+   for (int i = 0; chr[i] != '\0'; i++) {
+    char ch=chr[i];
+        if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u' ||
+            ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') {
+            vovels++;
         }
-        k=0;
+  
+        else if ((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')) {
+            consonants++;
+        }
     }
-}
 
-word[k] = '\0';
-if(ispali(word)) {
-    printf("%s ",word);
-}
+    printf("Vowels = %d\n", vovels);
+    printf("Consonants = %d\n", consonants);
 
-return 0;
-}
-
-int ispali(char str[]) {
-int i=0;
-int j=strlen(str)-1;
-while(i<j) {
-    if(str[i]!= str[j]) {
-        return 0;
-    }
-    i++;
-    j--;
-}
-return 1;
+    return 0;
 }
