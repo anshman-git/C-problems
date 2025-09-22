@@ -802,27 +802,68 @@
 // }
 
 // count vovels and consonant
+// int main () {
+//     int vovels=0,consonants=0;
+//     char chr[100];
+//     printf("Enter the sentence : ");
+//     fgets(chr,sizeof(chr),stdin);
+//    for (int i = 0; chr[i] != '\0'; i++) {
+//     char ch=chr[i];
+//         if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u' ||
+//             ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') {
+//             vovels++;
+//         }
+//         else if ((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')) {
+//             consonants++;
+//         }
+//     }
+//     printf("Vowels = %d\n", vovels);
+//     printf("Consonants = %d\n", consonants);
+//     return 0;
+// }
 
-int main () {
-    int vovels=0,consonants=0;
-    char chr[100];
-    printf("Enter the sentence : ");
-    fgets(chr,sizeof(chr),stdin);
+// Write a program to check whether two strings are anagrams of each other.
 
-   for (int i = 0; chr[i] != '\0'; i++) {
-    char ch=chr[i];
-        if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u' ||
-            ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') {
-            vovels++;
-        }
-  
-        else if ((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')) {
-            consonants++;
-        }
+int main() {
+    char ch[100], ch2[100],temp;
+    int i, j, len, isAnagram = 1;
+
+    printf("Enter first string: ");
+    scanf("%s", &ch);
+
+    printf("Enter second string: ");
+    scanf("%s", &ch2);
+
+    if (strlen(ch) != strlen(ch2)) {
+        printf("Not Anagram \n");
+        return 0;
     }
 
-    printf("Vowels = %d\n", vovels);
-    printf("Consonants = %d\n", consonants);
+    len = strlen(ch);
+    for (i = 0; i < len - 1; i++) {
+        for (j = i + 1; j < len; j++) {
+            if (ch[i] > ch[j]) {
+                temp = ch[i];
+                ch[i] = ch[j];
+                ch[j] = temp;
+            }
+            if (ch2[i] > ch2[j]) {
+                temp = ch2[i];
+                ch2[i] = ch2[j];
+                ch2[j] = temp;
+            }
+        }
+    }
+    for (i = 0; i < len; i++) {
+        if (ch[i] != ch2[i]) {
+            isAnagram = 0;
+            break;
+        }
+    }
+    if (isAnagram)
+        printf("Anagram\n");
+    else
+        printf("Not Anagram\n");
 
     return 0;
 }
