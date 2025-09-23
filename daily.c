@@ -823,47 +823,56 @@
 // }
 
 // Write a program to check whether two strings are anagrams of each other.
+// int main() {
+//     char ch[100], ch2[100],temp;
+//     int i, j, len, isAnagram = 1;
+//     printf("Enter first string: ");
+//     scanf("%s", &ch);
+//     printf("Enter second string: ");
+//     scanf("%s", &ch2);
+//     if (strlen(ch) != strlen(ch2)) {
+//         printf("Not Anagram \n");
+//         return 0;
+//     }
+//     len = strlen(ch);
+//     for (i = 0; i < len - 1; i++) {
+//         for (j = i + 1; j < len; j++) {
+//             if (ch[i] > ch[j]) {
+//                 temp = ch[i];
+//                 ch[i] = ch[j];
+//                 ch[j] = temp;
+//             }
+//             if (ch2[i] > ch2[j]) {
+//                 temp = ch2[i];
+//                 ch2[i] = ch2[j];
+//                 ch2[j] = temp;
+//             }
+//         }
+//     }
+//     for (i = 0; i < len; i++) {
+//         if (ch[i] != ch2[i]) {
+//             isAnagram = 0;
+//             break;
+//         }
+//     }
+//     if (isAnagram)
+//         printf("Anagram\n");
+//     else
+//         printf("Not Anagram\n");
+//     return 0;
+// }
 
-int main() {
-    char ch[100], ch2[100],temp;
-    int i, j, len, isAnagram = 1;
 
-    printf("Enter first string: ");
-    scanf("%s", &ch);
-
-    printf("Enter second string: ");
-    scanf("%s", &ch2);
-
-    if (strlen(ch) != strlen(ch2)) {
-        printf("Not Anagram \n");
-        return 0;
-    }
-
-    len = strlen(ch);
-    for (i = 0; i < len - 1; i++) {
-        for (j = i + 1; j < len; j++) {
-            if (ch[i] > ch[j]) {
-                temp = ch[i];
-                ch[i] = ch[j];
-                ch[j] = temp;
-            }
-            if (ch2[i] > ch2[j]) {
-                temp = ch2[i];
-                ch2[i] = ch2[j];
-                ch2[j] = temp;
-            }
-        }
-    }
-    for (i = 0; i < len; i++) {
-        if (ch[i] != ch2[i]) {
-            isAnagram = 0;
-            break;
-        }
-    }
-    if (isAnagram)
-        printf("Anagram\n");
-    else
-        printf("Not Anagram\n");
-
-    return 0;
-}
+// Write a program that takes an input string and prints its reverse, but do not use the built-in function strrev().
+// int main() {
+//     int j;
+//     char str[100],temp[100];
+//     printf("Enter string:");
+//     scanf("%s",str);
+//     j=strlen(str);
+//     temp[j]='\0';
+//     for(int i=0;i<=j-1;i++) {
+//         temp[j-1-i] = str[i];
+//     }
+//     printf("%s",temp);
+// }
