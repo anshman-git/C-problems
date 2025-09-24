@@ -801,6 +801,8 @@
 // return 1;
 // }
 
+
+
 // count vovels and consonant
 // int main () {
 //     int vovels=0,consonants=0;
@@ -876,3 +878,29 @@
 //     }
 //     printf("%s",temp);
 // }
+
+// write a program to remove all duplicate character from a given string. the output should contain only the unique character, preserving the order of their first appearence
+int main() {
+    char str[100],temp[100];
+    int k=0;
+
+    printf("Enter string: ");
+    scanf("%s",str);
+
+    for(int i=0;i < strlen(str);i++) {
+        int dup = 0 ;
+        for(int j=0;j<k;j++) {
+            if (str[i] == temp[j]) {
+                dup = 1;
+                break;
+            }
+        }
+            if (!dup) {
+            temp[k++] = str[i];
+            }
+        
+    }
+    temp[k]='\0';
+    printf("after removing : %s",temp);
+    return 0;
+}
