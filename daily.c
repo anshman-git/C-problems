@@ -880,27 +880,53 @@
 // }
 
 // write a program to remove all duplicate character from a given string. the output should contain only the unique character, preserving the order of their first appearence
-int main() {
-    char str[100],temp[100];
-    int k=0;
+// int main() {
+//     char str[100],temp[100];
+//     int k=0;
 
+//     printf("Enter string: ");
+//     scanf("%s",str);
+
+//     for(int i=0;i < strlen(str);i++) {
+//         int dup = 0 ;
+//         for(int j=0;j<k;j++) {
+//             if (str[i] == temp[j]) {
+//                 dup = 1;
+//                 break;
+//             }
+//         }
+//             if (!dup) {
+//             temp[k++] = str[i];
+//             }
+        
+//     }
+//     temp[k]='\0';
+//     printf("after removing : %s",temp);
+//     return 0;
+// }
+
+
+// Frequency Count of Characters in a String
+int main() {
+    char str[100],str2[100];
+    int count;
     printf("Enter string: ");
     scanf("%s",str);
+    printf("Frequency of charecter : ");
+    for(int i = 0;i<strlen(str);i++) {
 
-    for(int i=0;i < strlen(str);i++) {
-        int dup = 0 ;
-        for(int j=0;j<k;j++) {
-            if (str[i] == temp[j]) {
-                dup = 1;
-                break;
+        if (str2[i]==1) {
+            continue;
+        }
+        count = 1;
+        for (int j = i + 1; j < strlen(str); j++) {
+            if (str[i] == str[j]) {
+                count++;
+                str2[j] = 1; 
             }
         }
-            if (!dup) {
-            temp[k++] = str[i];
-            }
-        
+        printf("%c = %d\n",str[i],count);
     }
-    temp[k]='\0';
-    printf("after removing : %s",temp);
     return 0;
+    
 }
