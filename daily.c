@@ -2,18 +2,28 @@
 #include<math.h>
 #include<string.h>
 
-// Day 1
 
-//print name given by user
+// 1
+// print "Hello world"
 // int main() {
-// char name[100];
-// printf("enter your name:");
-// scanf("%s", &name);
-// printf("your name is : %s", name );
-// return 0;
+//     printf("Hello World");
+//     return 0;
 // }
 
+// 2
+// add 2 no input by user
+// int main() {
+//     int a,b,sum;
+//     printf("Enter number a: ");
+//     scanf("%d",&a);
+//     printf("Enter number b: ");
+//     scanf("%d",&b);
+//     sum = a+b;
+//     printf("%d + %d = %d",a,b,sum);
+//     return 0;
+// }
 
+// 3
 //area of a square
 // int main() {
 //     float side;
@@ -23,6 +33,7 @@
 // }
 
 
+// 4
 //area of a circle
 // int main() {
 //     float r;
@@ -32,6 +43,14 @@
 // } 
 
 
+// 5
+// Some aruthmatic question 
+// int main() {
+//     int a=2,b=3,c=4,d=5;
+//     printf("%d",a*b-c+d);
+// }
+
+// 6
 //check that number divisible by 2 or not
 // int main() {
 //     int n;
@@ -46,6 +65,7 @@
 // }
 
 
+// 7
 // print average of 3 number input by user
 // int main() {
 //     float a,b,c;
@@ -60,9 +80,8 @@
 //     printf("the average of the numbers is %f", avg);
 // }
 
-// DAY 2
 
-
+// 8
 // check that given charecter is digit or not
 // int main() {
 //    char ch;
@@ -78,6 +97,7 @@
 //    }
 
 
+// 9
 // to print the smallest number
 // int main() {
 //     float a,b,c;
@@ -99,6 +119,41 @@
 // }
 
 
+// 10
+// check pass or fail
+// int main() {
+//     int marks;
+//     printf("Enter marks");
+//     scanf("%d",&marks);
+//     if(marks>=33) {
+//         printf("Pass");
+//     }
+//     else{
+//     printf("FAIL");
+// }
+// }
+
+
+// 11
+// int main() {
+//     int marks;
+//     printf("Enter marks");
+//     scanf("%d",&marks);
+//     if(marks>30) {
+//         printf("C");
+//     }
+//     else if(30 <= marks < 70 ) {
+//         printf("B");
+//     }
+//     else if(70 <= marks < 90 ) {
+//         printf("A");
+//     }else if(90 <= marks <=100) {
+//         printf("A+");
+//     }
+// }
+
+
+// 12
 // to check upper case or lower case
 // int main() {
 //     char ch;
@@ -109,6 +164,7 @@
 // }
 
 
+// 14
 // printing the numbers from 0 to n, if n is given by user
 // int main() {
 //     int n;
@@ -121,6 +177,7 @@
 // }
 
 
+// 15
 // print the sum of first n natural number 
 // int main() {
 //     int n;
@@ -134,9 +191,8 @@
 //     return 0;
 // }
 
-// DAY 3
 
-
+// 16
 // print the table of a number input by the user
 // int main() {
 //     int n,i,m;
@@ -150,6 +206,7 @@
 // }
 
 
+// 18
 // keep taking number as input from the user until user enters an odd number
 // int main() {
 //     int n;
@@ -166,6 +223,7 @@
 // }
 
 
+// 19
 // print all no 1-10 except 6
 // int main() {
 //   for(int i=1;i<=10;i++) {
@@ -178,6 +236,7 @@
 // }
 
 
+// 20
 // print all the odd number from 5 to 50 
 // int main() {
 //   for(int i = 5; i<=50 ; i++){
@@ -190,6 +249,7 @@
 // }
 
 
+// 21
 // print the factorial of number n
 // int main() {
 //   int n,m=1;
@@ -202,9 +262,8 @@
 //   return 0;
 // }
  
-// DAY 4
 
-
+// 22
 // print reverse of the table n
 // int main() {
 //     int n,m;
@@ -218,6 +277,7 @@
 // } 
 
 
+// 23
 // calculate the sum of all number b/w 5 to 50
 // int main() {
 //     int n=0;
@@ -229,6 +289,7 @@
 // }
 
 
+// 24
 // write 2 function one to print hello and second to print good bye 
 //     void printHello();
 //     void printgb();
@@ -245,6 +306,7 @@
 // }
 
 
+// 25
 // write a function that print Namaste if user is Indian and Bonjour if the user is french 
 // void printNamaste();
 // void printBonjour();
@@ -271,6 +333,7 @@
 // }
 
 
+// 26
 // use library function to calculate the sq of a number given by user 
 // int main() {
 //     int n;
@@ -280,9 +343,8 @@
 //     return 0;
 // }
 
-// DAY 5
 
-
+// 28
 // print hello world n times using functions
 // void printhw(int count);
 // int main() {
@@ -298,6 +360,7 @@
 // }
 
 
+// 29
 // sum of first n natural number 
 // int sum(int n);
 // int main() {
@@ -314,6 +377,7 @@
 // }
 
 
+// 30
 // factorial of n
 // int fac(int n);
 // int main() {
@@ -329,6 +393,7 @@
 // }
 
 
+// 31
 // write a function to convert celsius to fahrenheit
 // float celtof(float c);
 // int main() {
@@ -342,6 +407,7 @@
 // }
 
 
+// 32
 // write a function to calculate percentage of a student from marks in science maths sanskrit
 // int perc(float x, float y, float z);
 // int main() {
@@ -361,7 +427,8 @@
 //     return per; 
 // }
 
-// DAY 6
+
+// 33
 // write a function to print n terms of the fibonacci sequence
 // int fibN(int n);
 // int main() {
@@ -385,6 +452,7 @@
 // }
 
 
+// 34
 // fibonacci sequence with loop
 // int main() {
 //     int n,first =0, second=1 , next ;
@@ -405,6 +473,8 @@
 //    return 0;    
 // }
 
+
+// 
 // check prime using function 
 // void isprime(int a);
 // int main() {
@@ -434,6 +504,8 @@
 // return;
 // }
 
+
+// 35
 // pow function
 // int powe(int a, int b);
 // int main() {
@@ -453,6 +525,8 @@
 //     return c;
 // }
 
+
+// 
 // Write a C program using a function int reverse(int n) that takes an integer n as input and returns its reverse
 // int reverse(int n);
 // int main() {
@@ -472,7 +546,7 @@
 // }
 
 
-// Day 7
+// 36
 // print the value of i using pointer to pointer 
 // int main() {
 //   int i;
@@ -484,6 +558,8 @@
 //   return 0;
 // }
 
+
+// 37
 // swap x and y using pointer
 // void _swap(int *a,int *b);
 // int main() {
@@ -502,6 +578,8 @@
 // *b=t;
 // }
 
+
+// 38
 // write a function to calculate the sum product average of 2 number using pointer
 // void dowork(int a,int b,int *sum, int*prod,int *avg);
 // int main() {
@@ -517,6 +595,8 @@
 // *avg=(a+b)/2;
 // }
 
+
+// 39
 // write a program in c to find the maximum number b/w two number using pointer
 // void max(int *a,int *b);
 // int main() {
@@ -537,24 +617,7 @@
 // }
 
 
-// print element of array in reverse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// DAY 8
-
+// 41
 // print all the letter in english alphabet using pointer 
 // int main() {
 //   int a[26];
@@ -569,6 +632,7 @@
 // }
 
 
+// 42
 // write a program to enter price of 3 items and print their final cost with gst using array
 // int main() {
 //     int price[3];
@@ -581,6 +645,7 @@
 // }
 
 
+// 43
 // write a function to count the no of odd number in an array
 // int count(int arr[],int n);
 // int main() {
@@ -597,6 +662,8 @@
 //   return count;
 // }
 
+
+// 45
 // write a function to reverse an array
 // void rev(int arr[], int n);
 // int main() {
@@ -623,6 +690,7 @@
 //     }
 // }
 
+// 46
 // write a program to store the first n fibonacci number
 // int main() {
 // int n;
@@ -641,7 +709,7 @@
 // }
 
 
-// DAY 9
+// 47
 // create a 2d array storing the table of 2 and 3
 // void table(int arr[][10],int n,int m,int num);
 // int main() {
@@ -663,35 +731,7 @@
 // }
 // }
 
-
-// create a string to store first ans last name of the user and print all the charector in loop
-// void printString(char arr[]);
-// int main() {
-// char firstName[] = "Anshman";
-// char lastName[] = "Khare";
-
-// printString(firstName);
-// printString(lastName);
-
-// return 0;
-// }
-// void printString(char arr[]) {
-//     for(int i=0; arr[i] != '\0';i++) {
-//         printf("%c", arr[i]);
-//     }
-//     printf("\n");
-// }
-
-
-// write the full name of the user
-// int main() {
-//     char str[100];
-//     gets(str);
-//     puts(str);
-//     return 0;
-// }
-
-
+// 48
 // make a program that input user name and print its length
 // int countLength(char arr[]);
 // int main() {
@@ -709,7 +749,7 @@
 // }
 
 
-
+// 49
 // make a program that input user name and print its length using string
 // int main() {
 //     char a[100];
@@ -720,7 +760,7 @@
 // }
 
 
-// Day 10
+// 50
 // take a string input from user using %c
 // int main() {
 //     char a[100];
@@ -738,6 +778,7 @@
 // }
 
 
+// 51
 // Salting 
 // find the salted form of a password enter by a user if the salt is 123 and added to the end
 // void salting(char pass[]);
@@ -755,6 +796,7 @@
 // }
 
 
+// 53
 // print all Palindrome Words in a Sentence
 // int ispali(char str[]);
 
@@ -803,6 +845,7 @@
 
 
 
+// 54
 // count vovels and consonant
 // int main () {
 //     int vovels=0,consonants=0;
@@ -824,6 +867,8 @@
 //     return 0;
 // }
 
+
+// 55
 // Write a program to check whether two strings are anagrams of each other.
 // int main() {
 //     char ch[100], ch2[100],temp;
@@ -865,6 +910,7 @@
 // }
 
 
+// 56
 // Write a program that takes an input string and prints its reverse, but do not use the built-in function strrev().
 // int main() {
 //     int j;
@@ -879,6 +925,8 @@
 //     printf("%s",temp);
 // }
 
+
+// 57
 // write a program to remove all duplicate character from a given string. the output should contain only the unique character, preserving the order of their first appearence
 // int main() {
 //     char str[100],temp[100];
@@ -906,27 +954,67 @@
 // }
 
 
+// 58
 // Frequency Count of Characters in a String
-int main() {
-    char str[100],str2[100];
-    int count;
-    printf("Enter string: ");
-    scanf("%s",str);
-    printf("Frequency of charecter : ");
-    for(int i = 0;i<strlen(str);i++) {
+// int main() {
+//     char str[100],str2[100];
+//     int count;
+//     printf("Enter string: ");
+//      gets(str);
+//     printf("Frequency of charecter : \n");
+//     for(int i = 0;i<strlen(str);i++) {
 
-        if (str2[i]==1) {
-            continue;
-        }
-        count = 1;
-        for (int j = i + 1; j < strlen(str); j++) {
-            if (str[i] == str[j]) {
-                count++;
-                str2[j] = 1; 
-            }
-        }
-        printf("%c = %d\n",str[i],count);
-    }
-    return 0;
-    
-}
+//         if (str2[i]==1) {
+//             continue;
+//         }
+//         count = 1;
+//         for (int j = i + 1; j < strlen(str); j++) {
+//             if (str[i] == str[j]) {
+//                 count++;
+//                 str2[j] = 1; 
+//             }
+//         }
+//         printf("%c = %d\n",str[i],count);
+//     }
+//     return 0;
+// }
+
+
+// reverse each word in string
+// int main() {
+//     char str[100];
+//     int length;
+//     printf("Enter string");
+//     gets(str);
+//     length = strlen(str);
+//     for(int i = 0 ; i<)
+// }
+
+
+// create a string to store first and last name of the user and print all the charector in loop
+// void printString(char arr[]);
+// int main() {
+// char firstName[] = "Anshman";
+// char lastName[] = "Khare";
+
+// printString(firstName);
+// printString(lastName);
+
+// return 0;
+// }
+// void printString(char arr[]) {
+//     for(int i=0; arr[i] != '\0';i++) {
+//         printf("%c", arr[i]);
+//     }
+//     printf("\n");
+// }
+
+
+// write the full name of the user
+// int main() {
+//     char str[100];
+//     gets(str);
+//     puts(str);
+//     return 0;
+// }
+
