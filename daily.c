@@ -164,6 +164,15 @@
 // }
 
 
+// print number from 0 to 10
+// int main() {
+//     for (int i=0;i<=10;i++) {
+//         printf("%d\n",i);
+//     }
+//     return 0;
+// }
+
+
 // 14
 // printing the numbers from 0 to n, if n is given by user
 // int main() {
@@ -206,7 +215,7 @@
 // }
 
 
-// 18
+// 17
 // keep taking number as input from the user until user enters an odd number
 // int main() {
 //     int n;
@@ -221,6 +230,24 @@
 //     printf("thank you");
 //     return 0;
 // }
+
+
+// 18
+// keep taking number as input from the user until user enters multiple of 7
+// int main() {
+//     int n;
+//     do{
+//         printf("enter any number:");
+//         scanf("%d", &n);
+//         printf("%d\n", n);
+//         if(n%7 != 0) {
+//         break;
+//         }
+//     }while (1);
+//     printf("thank you");
+//     return 0;
+// }
+
 
 
 // 19
@@ -343,6 +370,30 @@
 //     return 0;
 // }
 
+
+// 27
+// write a function to calculate area sq of cirle and rectangle
+// int areaofcircle(int r);
+// int areaofrec(int a,int b);
+// int main() {
+//     int r,a,b;
+//     print("Enter radius: ");
+//     scanf("%d",&r);
+
+//     printf("Enter length and breath : ");
+//     scanf("%d %d",&a,&b);
+    
+//     printf("Area of circle and rectangle id %d and %d",areaofcircle(r),areaofrec(a,b));
+//     return 0;
+// }
+// int areaofcircle(int r) {
+//     float are= 3.14*r*r;
+//     return are;
+// }
+// int areaofrec(int a,int b) {
+//     int areaa=a*b;
+//     return areaa;
+// }
 
 // 28
 // print hello world n times using functions
@@ -474,37 +525,6 @@
 // }
 
 
-// 
-// check prime using function 
-// void isprime(int a);
-// int main() {
-// int b;
-// printf("Enter the number :- ");
-// scanf("%d",&b);
-// isprime(b);
-// return 0;
-// }
-// void isprime(int a) {
-//     int i,flag=0;
-//      if (a <= 1) {
-//         printf("Number is not prime");
-//         return;
-//     }
-//     for(i=2;i<=a/2;i++) {
-//       if (a % i == 0) {
-//             flag = 1;
-//             break;
-//         }
-//     }
-//  if (flag == 0) {
-//         printf("Number is prime");
-//     } else {
-//         printf("Number is not prime");
-//     }
-// return;
-// }
-
-
 // 35
 // pow function
 // int powe(int a, int b);
@@ -524,27 +544,6 @@
 //     }
 //     return c;
 // }
-
-
-// 
-// Write a C program using a function int reverse(int n) that takes an integer n as input and returns its reverse
-// int reverse(int n);
-// int main() {
-// int n;
-// printf("Enter number to reverse:");
-// scanf("%d",&n);
-// printf("reversed number is %d",reverse(n));
-// return 0;
-// }
-// int reverse(int n) {
-//     int rev=0;
-//     for(; n > 0; n /= 10) {
-//         int digit = n%10;
-//         rev = rev*10+digit;
-//     }
-//     return rev;
-// }
-
 
 // 36
 // print the value of i using pointer to pointer 
@@ -663,6 +662,11 @@
 // }
 
 
+// 44
+// some mathematical question
+// solved in copy 
+
+
 // 45
 // write a function to reverse an array
 // void rev(int arr[], int n);
@@ -731,6 +735,7 @@
 // }
 // }
 
+
 // 48
 // make a program that input user name and print its length
 // int countLength(char arr[]);
@@ -794,6 +799,12 @@
 //     strcat(newpass,slat);
 //     puts(newpass);
 // }
+
+
+
+// 52
+// slice 
+
 
 
 // 53
@@ -980,6 +991,7 @@
 // }
 
 
+// 59
 // reverse each word in string
 // int main() {
 //     char str[100];
@@ -991,6 +1003,7 @@
 // }
 
 
+// 60
 // create a string to store first and last name of the user and print all the charector in loop
 // void printString(char arr[]);
 // int main() {
@@ -1010,11 +1023,65 @@
 // }
 
 
+// 61
 // write the full name of the user
 // int main() {
 //     char str[100];
 //     gets(str);
 //     puts(str);
 //     return 0;
+// }
+
+
+// 62
+// check prime using function 
+// void isprime(int a);
+// int main() {
+// int b;
+// printf("Enter the number :- ");
+// scanf("%d",&b);
+// isprime(b);
+// return 0;
+// }
+// void isprime(int a) {
+//     int i,flag=0;
+//      if (a <= 1) {
+//         printf("Number is not prime");
+//         return;
+//     }
+//     for(i=2;i<=a/2;i++) {
+//       if (a % i == 0) {
+//             flag = 1;
+//             break;
+//         }
+//     }
+//  if (flag == 0) {
+//         printf("Number is prime");
+//     } else {
+//         printf("Number is not prime");
+//     }
+// return;
+// }
+
+
+
+
+// 63
+// Write a C program using a function int reverse(int n) that takes an integer n as input and returns its reverse
+// int reverse(int n);
+// int main() {
+// int n;
+// printf("Enter number to reverse:");
+// scanf("%d",&n);
+// printf("reversed number is %d",reverse(n));
+// return 0;
+// }
+// int reverse(int n) {
+//     int rev=0;
+//     for(; n > 0; n /= 10) {
+//         int digit = n%10;
+//         rev = rev*10+digit;
+//     }
+//     return rev;
 // }
 
