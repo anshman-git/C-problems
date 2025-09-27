@@ -993,18 +993,18 @@
 
 // 59
 // reverse each word in string
-int main() {
-    char str[100];
-    int len;
-    printf("Enter string: ");
-    gets(str);
-    len = strlen(str);
+// int main() {
+//     char str[100];
+//     int len;
+//     printf("Enter string: ");
+//     gets(str);
+//     len = strlen(str);
     
-    for(int i = len; i >= 0;i--) {
-    printf("%c",str[i]);
-    }
-    return 0;
-}
+//     for(int i = len; i >= 0;i--) {
+//     printf("%c",str[i]);
+//     }
+//     return 0;
+// }
 
 
 // 60
@@ -1089,3 +1089,52 @@ int main() {
 //     return rev;
 // }
 
+
+//write a function to count the occurence of vovels in a string
+
+// int countvovel(char str[100]);
+
+// int main() {
+// char str[100];
+// printf("Enter String:");
+// gets(str);
+// printf("There are %d vovels in the string",countvovel(str));
+// return 0;
+// }
+
+// int countvovel(char str[100]) {
+//     int count = 0;
+//     for(int i=0;i<=strlen(str)-1;i++) {
+
+//     if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u') {
+//         count++;
+//     }
+// }
+// return count;
+// }
+
+
+
+// check if a charecter is present in a charecter or not
+int main() {
+    char str[100],ch;
+    int a=0;
+    printf("Enter String:");
+    gets(str);
+    printf("Enter the charector you want to check in your string:");
+    scanf("%c",&ch);
+    for (int i=0;str[i]!='\0';i++) {
+        if (str[i] == ch) {
+          a+=1;
+        }
+       
+    }
+    if(a>0) {
+    printf("YES");
+    }
+    else {
+
+    printf("NO %c charector not found",ch);
+}
+    return 0;
+}
