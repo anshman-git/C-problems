@@ -994,12 +994,16 @@
 // 59
 // reverse each word in string
 // int main() {
-//     char str[100];
+//     char str[100],str2[100];
 //     int length;
 //     printf("Enter string");
 //     gets(str);
 //     length = strlen(str);
-//     for(int i = 0 ; i<)
+//     str2[length] = '\0';
+//     for(int i = 0 ; i<length;i++) {
+//     str2[j-1-i] = str[i];
+//     }
+//     return 0;
 // }
 
 
