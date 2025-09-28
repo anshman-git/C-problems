@@ -3,6 +3,7 @@
 #include<string.h>
 
 
+// DAY  1
 // 1
 // print "Hello world"
 // int main() {
@@ -50,6 +51,9 @@
 //     printf("%d",a*b-c+d);
 // }
 
+
+
+// DAY  3
 // 6
 //check that number divisible by 2 or not
 // int main() {
@@ -134,6 +138,7 @@
 // }
 
 
+// DAY  3
 // 11
 // int main() {
 //     int marks;
@@ -201,6 +206,7 @@
 // }
 
 
+// DAY  4
 // 16
 // print the table of a number input by the user
 // int main() {
@@ -276,6 +282,7 @@
 // }
 
 
+// DAY  5
 // 21
 // print the factorial of number n
 // int main() {
@@ -360,6 +367,7 @@
 // }
 
 
+// DAY  6
 // 26
 // use library function to calculate the sq of a number given by user 
 // int main() {
@@ -444,6 +452,8 @@
 // }
 
 
+
+// DAY  6
 // 31
 // write a function to convert celsius to fahrenheit
 // float celtof(float c);
@@ -545,6 +555,9 @@
 //     return c;
 // }
 
+
+
+// DAY  7
 // 36
 // print the value of i using pointer to pointer 
 // int main() {
@@ -616,6 +629,7 @@
 // }
 
 
+// DAY  8
 // 41
 // print all the letter in english alphabet using pointer 
 // int main() {
@@ -667,6 +681,7 @@
 // solved in copy 
 
 
+// DAY  9
 // 45
 // write a function to reverse an array
 // void rev(int arr[], int n);
@@ -783,6 +798,8 @@
 // }
 
 
+
+// DAY  10
 // 51
 // Salting 
 // find the salted form of a password enter by a user if the salt is 123 and added to the end
@@ -921,6 +938,7 @@
 // }
 
 
+// DAY  12
 // 56
 // Write a program that takes an input string and prints its reverse, but do not use the built-in function strrev().
 // int main() {
@@ -1027,6 +1045,7 @@
 // }
 
 
+// DAY  13
 // 61
 // write the full name of the user
 // int main() {
@@ -1090,6 +1109,7 @@
 // }
 
 
+// 64
 //write a function to count the occurence of vovels in a string
 
 // int countvovel(char str[100]);
@@ -1115,26 +1135,51 @@
 
 
 
+// 65
 // check if a charecter is present in a charecter or not
-int main() {
-    char str[100],ch;
-    int a=0;
-    printf("Enter String:");
-    gets(str);
-    printf("Enter the charector you want to check in your string:");
-    scanf("%c",&ch);
-    for (int i=0;str[i]!='\0';i++) {
-        if (str[i] == ch) {
-          a+=1;
-        }
+// int main() {
+//     char str[100],ch;
+//     int a=0;
+//     printf("Enter String:");
+//     gets(str);
+//     printf("Enter the charector you want to check in your string:");
+//     scanf("%c",&ch);
+//     for (int i=0;str[i]!='\0';i++) {
+//         if (str[i] == ch) {
+//           a+=1;
+//         }
        
-    }
-    if(a>0) {
-    printf("YES");
-    }
-    else {
+//     }
+//     if(a>0) {
+//     printf("YES");
+//     }
+//     else {
 
-    printf("NO %c charector not found",ch);
-}
-    return 0;
-}
+//     printf("NO %c charector not found",ch);
+// }
+//     return 0;
+// }
+
+
+
+// DAY  14
+
+// 66
+// write a program to store data of 3 student using structure
+// struct student {
+//     int roll;
+//     float cgpa;
+//     char name[100];
+// };
+// int main () {
+//     struct student s1={1,8.4,"Anshman"};
+//     struct student s2={2,8.4,"Rohit"};
+//     struct student s3={3,8.8,"Rahul"};
+//     printf("\n");
+//     printf(" name = %s\t  name = %s\t name = %s\n ",s1.name,s2.name,s3.name);
+//     printf("roll = %d\t  roll = %d\t roll = %d\n ",s1.roll,s2.roll,s3.roll);
+//     printf("cgpa=%f\t  cgpa=%f\t cgpa=%f\n",s1.cgpa,s2.cgpa,s3.cgpa);
+//     return 0;
+// }
+
+
