@@ -1183,6 +1183,7 @@
 // }
 
 
+//67
 // reverse an array using pointer
 int main() {
     int arr[5] = {1, 2, 3, 4, 5};
@@ -1199,4 +1200,80 @@ int main() {
         printf("%d ", arr[i]);
     }
     return 0;
+}
+
+
+//68
+//bill
+
+
+struct Customer {
+    char name[50];
+    char phone[15];
+    int items;                
+    char itemName[50][50];   
+    float price[50];         
+    float total;             
+};
+
+
+    
+
+int main() {
+    struct Customer c;
+
+ 
+    printf("Enter Customer Name: ");
+    fgets(c.name, sizeof(c.name), stdin);
+    c.name[strcspn(c.name, "\n")] = '\0'; 
+
+    printf("Enter Phone Number: ");
+    fgets(c.phone, sizeof(c.phone), stdin);
+    c.phone[strcspn(c.phone, "\n")] = '\0';
+
+    printf("Enter number of items: ");
+    scanf("%d", &c.items);
+
+    c.total = 0;
+
+ 
+    for (int i = 0; i < c.items; i++) {
+        printf("\nEnter name of item %d: ", i + 1);
+        scanf("%s", c.itemName[i]);
+
+        printf("Enter price of %s: Rs. ", c.itemName[i]);
+        scanf("%f", &c.price[i]);
+
+        c.total += c.price[i];   // add to total
+    }
+
+   
+    printBill(c);
+
+    return 0;
+}
+
+
+void printBill(struct Customer c) {
+    printf("\n================== BILL===================\n");
+    printf("Customer Name : %s\n", c.name);
+    printf("Phone Number  : %s\n", c.phone);
+    printf("------------------------------------------\n");
+    printf("Items Purchased:\n");
+
+    for (int i = 0; i < c.items; i++) {
+        printf("%d. %s  -  Rs. %.2f\n", i + 1, c.itemName[i], c.price[i]);
+    }
+
+    printf("------------------------------------------\n");
+    printf("Total Amount (without GST): Rs. %.2f\n", c.total);
+
+    float gst = c.total * 0.18;  
+    float grandTotal = c.total + gst;
+
+    printf("GST (18%%)                : Rs. %.2f\n", gst);
+    printf("Grand Total (with GST)    : Rs. %.2f\n", grandTotal);
+    printf("==========================================\n");
+    printf("      Thanks for Shopping! Visit Again \n");
+    printf("==========================================\n");
 }
