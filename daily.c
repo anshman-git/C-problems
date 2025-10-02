@@ -1270,28 +1270,51 @@
 
 // 69
 // create a structure to store vectores. then make a function to return sum of two vectors
-struct vector {
-    int x;
-    int y;
-};
+// struct vector {
+//     int x;
+//     int y;
+// };
 
-void calsum(struct vector v1,struct vector v2,struct vector sum);
+// void calsum(struct vector v1,struct vector v2,struct vector sum);
 
-int main() {
-    struct vector v1={5,10};
-    struct vector v2 = {3,7};
-    struct vector sum = {0};
+// int main() {
+//     struct vector v1={5,10};
+//     struct vector v2 = {3,7};
+//     struct vector sum = {0};
     
-    calsum(v1,v2,sum);
-    return 0;
+//     calsum(v1,v2,sum);
+//     return 0;
 
-}
+// }
 
-void calsum(struct vector v1,struct vector v2,struct vector sum) {
-    sum.x = v1.x + v2.x;
-    sum.y = v2.y + v1.y;
+// void calsum(struct vector v1,struct vector v2,struct vector sum) {
+//     sum.x = v1.x + v2.x;
+//     sum.y = v2.y + v1.y;
 
-    printf("sum of x is = %d\n",sum.x);
-    printf("Sum of y is = %d\n",sum.y);
+//     printf("sum of x is = %d\n",sum.x);
+//     printf("Sum of y is = %d\n",sum.y);
 
-}
+// }
+
+
+// 70
+// create a structure to store complex number (use arrow operator)
+// struct complex {
+// int realno;
+// int imgno;
+// };
+
+// int main() {
+//     int a,b;
+//     printf("Enter in the form of a+ib\n");
+//     printf("\nEnter a:");
+//     scanf("%d",&a);
+//     printf("Enter b:");
+   
+//     scanf("%d",&b);
+//     struct complex number1 = {a,b};
+//     struct complex *ptr = &number1;
+//     printf("\nreal part = %d\n",ptr->realno);
+//     printf("Imagenary part = %d\n",ptr->imgno);
+//     return 0;
+// }
