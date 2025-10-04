@@ -1204,6 +1204,35 @@
 
 
 //68
+// create a structure to store vectores. then make a function to return sum of two vectors
+// struct vector {
+//     int x;
+//     int y;
+// };
+
+// void calsum(struct vector v1,struct vector v2,struct vector sum);
+
+// int main() {
+//     struct vector v1={5,10};
+//     struct vector v2 = {3,7};
+//     struct vector sum = {0};
+    
+//     calsum(v1,v2,sum);
+//     return 0;
+
+// }
+
+// void calsum(struct vector v1,struct vector v2,struct vector sum) {
+//     sum.x = v1.x + v2.x;
+//     sum.y = v2.y + v1.y;
+
+//     printf("sum of x is = %d\n",sum.x);
+//     printf("Sum of y is = %d\n",sum.y);
+
+// }
+
+
+// 69
 //bill
 // struct customer {
 //     char name[50];
@@ -1266,9 +1295,6 @@
 //     printf("==========================================\n");
 // }
 
-
-
-// 69
 // create a structure to store vectores. then make a function to return sum of two vectors
 // struct vector {
 //     int x;
@@ -1316,5 +1342,51 @@
 //     struct complex *ptr = &number1;
 //     printf("\nreal part = %d\n",ptr->realno);
 //     printf("Imagenary part = %d\n",ptr->imgno);
+//     return 0;
+// }
+
+//71
+//  make a structure to store bank account information of a customer of abc bank also make alias for it.
+// struct account {
+//     int accno;
+//     char name[100];
+//     char ifsccode[100];
+// } acc;
+// int main() {
+//     struct account acc1;
+//     printf("Enter your name :");
+//     scanf("%s",acc1.name);
+//     printf("Enter account number :");
+//     scanf("%d",acc1.accno);
+//     printf("Enter IFSC code :");
+//     scanf("%s",acc1.ifsccode);
+   
+//     struct account acc2, acc3;
+//     printf("\nEnter your name :");
+//     scanf("%s", acc2.name);
+//     printf("Enter account number :");
+//     scanf("%d", &acc2.accno);
+//     printf("Enter IFSC code :");
+//     scanf("%s", acc2.ifsccode);
+
+//     printf("\nEnter your name :");
+//     scanf("%s", acc3.name);
+//     printf("Enter account number :");
+//     scanf("%d", &acc3.accno);
+//     printf("Enter IFSC code :");
+//     scanf("%s", acc3.ifsccode);
+
+//     printf("\nAccount holder name : %s",acc1.name);
+//     printf("\nAccount number : %d",acc1.accno);
+//     printf("\nIFSC code : %s",acc1.ifsccode);
+
+
+//     printf("\nAccount holder name : %s", acc2.name);
+//     printf("\nAccount number : %d", acc2.accno);
+//     printf("\nIFSC code : %s", acc2.ifsccode);
+
+//     printf("\nAccount holder name : %s", acc3.name);
+//     printf("\nAccount number : %d", acc3.accno);
+//     printf("\nIFSC code : %s", acc3.ifsccode);
 //     return 0;
 // }
