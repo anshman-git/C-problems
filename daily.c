@@ -1390,3 +1390,87 @@
 //     printf("\nIFSC code : %s", acc3.ifsccode);
 //     return 0;
 // }
+
+// 72
+// check if a file is exist or not before reding from it
+// int main() {
+//     FILE *fptr;
+//     fptr = fopen("text.txt","r");
+//     if (fptr == NULL) {
+//         printf("File does not exist.\n");
+//     } else {
+//         printf("File exists.\n");
+//         fclose(fptr);
+//     }
+//     return 0;
+// }
+
+// 73
+// make a program to read 5 integer from a file
+// int main() {
+//     FILE *fptr;
+//     int num;
+//     fptr = fopen("number.txt", "r");
+//     for(int i=0;i<5;i++) {
+//     fscanf(fptr,"%d",&num);
+//     printf("%d\n",num);
+//     }
+//     fclose(fptr);
+//     return 0;
+// }
+
+// 74
+// make a program to input student information from a user and enter it to a file
+// int main() {
+//     FILE *fptr;
+//     fptr = fopen("student.txt","w");
+//     int roll;
+//     char name[100];
+//     float cgpa;
+//     printf("Enter name:");
+//     scanf("%s",name);
+//     printf("Enter roll number:");
+//     scanf("%d",&roll);
+//     printf("Enter CGPA:");
+//     scanf("%f",&cgpa);
+
+//     fprintf(fptr,"Name: %s\nRoll Number: %d\nCGPA: %.2f\n",name,roll,cgpa);
+//     fclose(fptr);
+//     return 0;
+// }
+
+// 75
+// write a program to write all the odd number from 1 to n in a file 
+// int main() {
+//     FILE *fptr;
+//     fptr = fopen("Odd.txt","w");
+//     int n;
+//     printf("Enter n:");
+//     scanf("%d",&n);
+//     for(int i=1;i<=n;i++) {
+//         if(i%2!=0) {
+//             fprintf(fptr,"%d\n",i);
+//         }
+//     }
+//     fclose(fptr);
+//     return 0;
+// }
+
+// 76
+//  2 number a and b are given in a file write a program to read them and print their sum in to the file
+// int main() {
+//     FILE *fptr;
+//     fptr = fopen("number.txt","r");
+//     int a,b;
+//     fscanf(fptr,"%d %d",&a,&b);
+//     fclose(fptr);
+
+//     int sum = a + b;
+
+//     fptr = fopen("number.txt","w");
+//     fprintf(fptr,"Sum is %d",sum);
+//     fclose(fptr);
+//     return 0;
+// }
+
+
