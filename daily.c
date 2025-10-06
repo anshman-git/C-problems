@@ -1474,3 +1474,54 @@
 // }
 
 
+// 77
+// write a program to allocat memory to store 5 prices
+// int main() {
+//     float *ptr;
+//     ptr = (float *)malloc(5 * sizeof(float));
+//     ptr[0] = 1;
+//     ptr[1] = 2;
+//     ptr[2] = 3;
+//     ptr[3] = 4;
+//     ptr[4] = 5;
+//     for(int i=0;i<5;i++) {
+//         printf("%f\n",ptr[i]);
+//     }
+//     return 0;
+// }
+
+
+//78
+// Write a program to check if a number is an Armstrong number
+
+int main () {
+    int n,a,b=0,c;
+    float ams=0.0;
+    printf("Enter number n: ");
+    scanf("%d",&n);
+    
+    a=n;
+    while (a!=0) {
+        a=a/10;
+        ++b;
+    }
+     
+    a=n;
+
+   while (n != 0) {
+    c = a % 10;
+    ams = ams + pow(c, b);
+    a = a / 10;
+}
+
+
+    if((int)ams==n) {
+        printf("%d is an Armstrong number.\n",n);
+    }
+    else{
+        printf("%d is not an Armstrong number.\n",n);
+    }
+    return 0;
+}
+
+
