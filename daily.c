@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include<math.h>
 #include<string.h>
+#include<stdlib.h>
 
 
 // DAY  1
@@ -1493,35 +1494,65 @@
 
 //78
 // Write a program to check if a number is an Armstrong number
+// int main () {
+//     int n,a,b=0,c;
+//     float ams=0.0;
+//     printf("Enter number n: ");
+//     scanf("%d",&n);
+//     a=n;
+//     while (a!=0) {
+//         a=a/10;
+//         ++b;
+//     }  
+//     a=n;
+//    while (a != 0) {
+//     c = a % 10;
+//     ams = ams + pow(c, b);
+//     a = a / 10;
+// }
 
-int main () {
-    int n,a,b=0,c;
-    float ams=0.0;
-    printf("Enter number n: ");
-    scanf("%d",&n);
+//     if((int)ams==n) {
+//         printf("%d is an Armstrong number.\n",n);
+//     }
+//     else{
+//         printf("%d is not an Armstrong number.\n",n);
+//     }
+//     return 0;
+// }
+
+
+// 79
+// write a program to allocate memory of size n, where n is entered by user.
+// int main() {
+//     int *ptr;
+//     int n;
+//     printf("Enter number n: ");
+//     scanf("%d",&n);
+//     ptr = (int *) calloc(n,sizeof(int) );
+
+//     for(int i=0;i<=n;i++) {
+//         printf("%d\n",ptr[i]);
+
+//     }
+//     return 0;
+// }
+
+
+// 80
+// create a array of size 5(using calloc )& enter its valuse from the user.
+// int main() {
+//     int *ptr;
+//     int n;
+//     ptr = (int *) calloc(5,sizeof(int) );
     
-    a=n;
-    while (a!=0) {
-        a=a/10;
-        ++b;
-    }
-     
-    a=n;
+//     printf("Enter number n(5): ");
+//     for(int i=0;i<5;i++) {
+//     scanf("%d",&ptr[i]);
+//     }
 
-   while (n != 0) {
-    c = a % 10;
-    ams = ams + pow(c, b);
-    a = a / 10;
-}
+//     for(int i=0;i<5;i++) {
+//         printf("Number %d is %d\n",i,ptr[i]);
+//     }
 
-
-    if((int)ams==n) {
-        printf("%d is an Armstrong number.\n",n);
-    }
-    else{
-        printf("%d is not an Armstrong number.\n",n);
-    }
-    return 0;
-}
-
-
+//     return 0;
+// }
