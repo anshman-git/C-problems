@@ -1645,7 +1645,26 @@
 
 // 85
 // Write a program to count vowels in a string using pointer.
+// int main() {
+//     char str[100];
+//     char *ptr;
+//     int count =0;
+//     printf("Enter string:");
+//     fgets(str, sizeof(str), stdin);
 
+//     ptr = str;
+
+//     while (*ptr != '\0') {
+//     if (*ptr == 'a' || *ptr == 'e' || *ptr == 'i' || *ptr == 'o' || *ptr == 'u' ||
+//         *ptr == 'A' || *ptr == 'E' || *ptr == 'I' || *ptr == 'O' || *ptr == 'U') {
+//         count++;
+//     }
+//     ptr++; 
+//     }
+
+//     printf("Vowels are %d",count);
+//     return 0;
+// }
 
 // 86
 // Write a program to find the largest element in an array using pointer.
