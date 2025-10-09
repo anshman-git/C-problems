@@ -1621,3 +1621,39 @@
 //     return 0;
 
 // }
+
+
+// 84
+// write a program to swap two number using call by refrence(pointer only,no third variable) 
+// void swap(int *a,int *b);
+// int main() {
+//     int a,b;
+//     printf("Enter a:");
+//     scanf("%d",&a);
+//     printf("Enter b:");
+//     scanf("%d",&b);
+//     swap(&a,&b);
+//     printf("after swap a = %d and b = %d\n",a,b);
+//     return 0;
+// }
+// void swap(int *a,int *b) {
+//     int temp = *a;
+//     *a = *b;
+//     *b=temp;
+// }
+
+
+// 85
+// Write a program to count vowels in a string using pointer.
+
+
+// 86
+// Write a program to find the largest element in an array using pointer.
+
+
+// 87
+// Write a program to reverse an array using pointer arithmetic (no indexing).
+
+
+// 88
+// Write a program to find length of a string without using strlen() function, only pointer.
