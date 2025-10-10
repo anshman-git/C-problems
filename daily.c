@@ -1691,7 +1691,47 @@
 
 // 87
 // Write a program to reverse an array using pointer arithmetic (no indexing).
+// int main() {
+//     int n;
+//     printf("enter n:");
+//     scanf("%d",&n);
+//     int arr[n];
+//     printf("\nEnter the arr = ");
+//     for(int i=0;i<n;i++) {
+//     scanf("%d",&arr[i]);
+//     }
+//     int *start = arr;
+//     int *end = arr+n-1;
+//     while(start<end) {
+//     int temp = *start;
+//     *start = *end;
+//     *end = temp;
+//     start++;
+//     end--;
+//     }
+//     printf("after swapping arr = ");
+//     for(int i=0;i<n;i++) {
+//     printf("%d ",arr[i]);
+//     }
+//     return 0;
+// }
 
 
 // 88
 // Write a program to find length of a string without using strlen() function, only pointer.
+// int main() {
+//     char str[100];
+//     int count=0;
+//     printf("Enter the str = ");
+//     scanf("%s",str);
+//     char *ptr;
+//     ptr=str;
+//     for(int i=0;*ptr != '\0';i++) {
+        
+//         count++;
+//         ptr++;
+//     } 
+//     printf("length = %d",count);
+//     return 0;
+// }
+
