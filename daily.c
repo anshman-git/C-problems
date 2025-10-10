@@ -1668,7 +1668,26 @@
 
 // 86
 // Write a program to find the largest element in an array using pointer.
-
+// int main() {
+//     int n;
+//     printf("enter n:");
+//     scanf("%d",&n);
+//     int arr[n];
+//     printf("\nEnter the arr = ");
+//     for(int i=0;i<n;i++) {
+//     scanf("%d",&arr[i]);
+//     }
+//     int *ptr = arr;
+//     int largest = *ptr;
+//     for(int i=0;i<n;i++) {
+//         if(*ptr>largest) {
+//             largest = *ptr;
+//         } 
+//         ptr++;
+//     }
+//     printf("\nlargest arr is %d",largest);
+//     return 0;
+// }
 
 // 87
 // Write a program to reverse an array using pointer arithmetic (no indexing).
