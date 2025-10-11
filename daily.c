@@ -1755,3 +1755,19 @@
 //     }
 //     return 0;
 // }
+
+
+// 90
+// Given a n digit integer, print the sum of its digits.
+// int main() {	
+//     int n,a=0;
+//     int digit;
+//     scanf("%d", &n);
+//     while(n!=0) {
+//         digit=n%10;
+//         n=n/10;
+//         a=a+digit;
+//     }
+//     printf("%d",a);
+//     return 0;
+// }
