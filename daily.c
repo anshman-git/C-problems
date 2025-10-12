@@ -1771,3 +1771,22 @@
 //     printf("%d",a);
 //     return 0;
 // }
+
+
+// 91
+// make triangle using *
+// int main() {
+//     int rows;
+//     printf("Enter rows of triangle:");
+//     scanf("%d",&rows);
+//     for(int i=1;i<=rows;i++) {
+//         for(int j=0;j<=rows-i;j++) {
+//             printf(" ");
+//         }
+//         for(int j=1;j<=i;j++) {
+//             printf("* "); 
+//         }       
+//         printf("\n");
+//     }    
+//     return 0;
+// }
