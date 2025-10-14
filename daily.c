@@ -1773,7 +1773,25 @@
 // }
 
 
+
 // 91
+// make square using *
+// int main() {
+//     int n;
+//     printf("Enter n:");
+//     scanf("%d",&n);
+//     for(int i=0;i<=n;i++) {
+        
+//         for(int k=0;k<=n;k++) {
+//             printf(" *");
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+
+// 92
 // make triangle using *
 // int main() {
 //     int rows;
@@ -1792,6 +1810,7 @@
 // }
 
 
+// 93
 // make diamond using *
 // int main() {
 //     int n;
@@ -1817,3 +1836,6 @@
 //     }
 //     return 0;
 // }
+
+
+//94 
