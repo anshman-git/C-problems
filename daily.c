@@ -1839,3 +1839,26 @@
 
 
 //94 
+// Pascal's Triangle in C
+// int factorial(int n) {
+//     int result = 1;
+//     for (int c = 1; c <= n; c++) {
+//         result = result * c;
+//     }
+//     return result;
+// }
+// int main() {
+//     int n, i, c;
+//     printf("Enter rows: ");
+//     scanf("%d", &n);
+//     for (i = 0; i < n; i++) {
+//         for (c = 0; c <= (n - i - 2); c++) {
+//             printf(" ");
+//         }
+//         for (c = 0; c <= i; c++) {
+//             printf("%d ",factorial(i)/(factorial(c)*factorial(i - c)));
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
