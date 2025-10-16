@@ -1865,34 +1865,35 @@
 
 // 95
 // inner redusing loop
-int main() {
-    int n;
-    printf("Enter n: ");
-    scanf("%d",&n);
-    int len = 2*n-1;
-    int start=0;
-    int end = len-1;
-    int mat[len][len];
+// int main() {
+//     int n;
+//     printf("Enter n: ");
+//     scanf("%d",&n);
+//     int len = 2*n-1;
+//     int start=0;
+//     int end = len-1;
+//     int mat[len][len];
+//     int temp=n;
 
-    while(n!=0) {
-    for(int i=start;i<=end;i++) {
-        for(int j=start;j<=end;j++) {
-            if(i==start||i==start||j==end||j==end) {
-            mat[i][j]=n;
-            }     
-        }
-    }
-    ++start;
-    --end;
-    --n;
-}
-    for(int i=0;i<len;i++) {
-        for(int j=0;j<len;j++) {
+//     while(temp!=0) {
+//     for(int i=start;i<=end;i++) {
+//         for(int j=start;j<=end;j++) {
+//             if(i==start||i==end||j==start||j==end) {
+//             mat[i][j]=temp;
+//             }     
+//         }
+//     }
+//     ++start;
+//     --end;
+//     --temp;
+// }
+//     for(int i=0;i<len;i++) {
+//         for(int j=0;j<len;j++) {
 
-            printf("%d",mat[i][j]);
-        }
-        printf("\n");
-    }   
-    return 0;
-    }
-    \\abhi error hai 
+//             printf(" %d",mat[i][j]);
+//         }
+//         printf("\n");
+//     }   
+//     return 0;
+//     }
+   
