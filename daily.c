@@ -1990,33 +1990,33 @@
 // Else if n>9  and it is an odd number, then print "odd".
 
 // void spell(int c) {
-//     if(c==1) {
-//         printf("one");
-//     }
-//     else if(c==2) {
-//         printf("two");
-//     }
-//     else if(c==3) {
-//         printf("three");
-//     }
-//     else if(c==4) {
-//         printf("four");
-//     }
-//     else if(c==5) {
-//         printf("five");
-//     }
-//     else if(c==6) {
-//         printf("six");
-//     }
-//     else if(c==7) {
-//         printf("seven");
-//     }
-//     else if(c==8) {
-//         printf("eight");
-//     }
-//     else if(c==9) {
-//         printf("nine");
-//     }
+    // if(c==1) {
+    //     printf("one");
+    // }
+    // else if(c==2) {
+    //     printf("two");
+    // }
+    // else if(c==3) {
+    //     printf("three");
+    // }
+    // else if(c==4) {
+    //     printf("four");
+    // }
+    // else if(c==5) {
+    //     printf("five");
+    // }
+    // else if(c==6) {
+    //     printf("six");
+    // }
+    // else if(c==7) {
+    //     printf("seven");
+    // }
+    // else if(c==8) {
+    //     printf("eight");
+    // }
+    // else if(c==9) {
+    //     printf("nine");
+    // }
     
 // }
 // int main() 
@@ -2043,3 +2043,23 @@
 //     return 0;
 // }
 
+// 100
+// hacker rank ques
+// Given a positive integer denoting , do the following:
+
+// If n<=9, print the lowercase English word corresponding to the number
+// else If n>9, print Greater than 9.
+//int main()
+// {
+//     int n;
+//     scanf("%d", &n);
+    
+//     char *numbers[10] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    
+//     if(n > 9)
+//         printf("Greater than 9\n");
+//     else
+//         printf("%s\n", numbers[n]);
+    
+//     return 0;
+// }
