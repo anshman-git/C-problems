@@ -1941,10 +1941,6 @@
 
 // 98
 // hacker rank question for printing sum of marks odd for girls and even for boys using array and function
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
 //Complete the following function.
 
@@ -1987,3 +1983,63 @@
 
 
 // 99
+// hackerrank question
+// For each integer  in the interval [a,b] (given as input) :
+// If 1<=n<=9, then print the English representation of it in lowercase. That is "one" for , "two" for , and so on.
+// Else if  n>9 and it is an even number, then print "even".
+// Else if n>9  and it is an odd number, then print "odd".
+
+// void spell(int c) {
+//     if(c==1) {
+//         printf("one");
+//     }
+//     else if(c==2) {
+//         printf("two");
+//     }
+//     else if(c==3) {
+//         printf("three");
+//     }
+//     else if(c==4) {
+//         printf("four");
+//     }
+//     else if(c==5) {
+//         printf("five");
+//     }
+//     else if(c==6) {
+//         printf("six");
+//     }
+//     else if(c==7) {
+//         printf("seven");
+//     }
+//     else if(c==8) {
+//         printf("eight");
+//     }
+//     else if(c==9) {
+//         printf("nine");
+//     }
+    
+// }
+// int main() 
+// {
+//     int a, b,c;
+    
+//     scanf("%d\n%d", &a, &b);
+//     for(int i=a;i<=b;i++) {
+//     c=a++;
+//     if(c<10) {
+//         spell(c);
+//         printf("\n");
+//     }
+//     else if(c>9) {
+//         if(c%2==0) {
+//             printf("even\n");
+//         }
+//         else if(c%2!=0) {
+//             printf("odd\n");
+//         }
+//         }    
+//     }
+    
+//     return 0;
+// }
+
