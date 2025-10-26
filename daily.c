@@ -46,7 +46,7 @@
 
 
 // 5
-// Some aruthmatic question 
+// Some arithmatic question 
 // int main() {
 //     int a=2,b=3,c=4,d=5;
 //     printf("%d",a*b-c+d);
@@ -141,6 +141,7 @@
 
 // DAY  3
 // 11
+// to give grade for examination
 // int main() {
 //     int marks;
 //     printf("Enter marks");
@@ -1700,15 +1701,15 @@
 //     for(int i=0;i<n;i++) {
 //     scanf("%d",&arr[i]);
 //     }
-//     int *start = arr;
-//     int *end = arr+n-1;
-//     while(start<end) {
-//     int temp = *start;
-//     *start = *end;
-//     *end = temp;
-//     start++;
-//     end--;
-//     }
+    // int *start = arr;
+    // int *end = arr+n-1;
+    // while(start<end) {
+    // int temp = *start;
+    // *start = *end;
+    // *end = temp;
+    // start++;
+    // end--;
+    // }
 //     printf("after swapping arr = ");
 //     for(int i=0;i<n;i++) {
 //     printf("%d ",arr[i]);
@@ -2046,9 +2047,9 @@
 // 100
 // hacker rank ques
 // Given a positive integer denoting , do the following:
-
 // If n<=9, print the lowercase English word corresponding to the number
 // else If n>9, print Greater than 9.
+
 //int main()
 // {
 //     int n;
