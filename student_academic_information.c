@@ -13,23 +13,25 @@ struct Student {
     char grade;
 };
 
-void addStudent();
-void displayAll();
-int searchStudent();
-void updateStudent();
-void deleteStudent();
-void generateReportCard();
-int savetofile();
-int loadfromfile();
-void sortbyname();
+void addStudent(struct Student stu[]);
+void displayAll(struct Student stu[], int count);
+int searchStudent(struct Student stu[], int count, int roll);
+void updateStudent(struct Student stu[], int count);
+void deleteStudent(struct Student stu[], int *count);
+void generateReportCard(struct Student stu[], int index);
+int saveToFile(struct Student stu[], int count);
+int loadFromFile(struct Student stu[], int *count);
 
+
+struct Student *stu;
+int count = 0;
+int capacity = 10;
 
 int main() {
     int choice;
-    struct Student *students = malloc(10 * sizeof(struct Student));
-    students = realloc(students, 20* sizeof(struct Student));
+    struct Student *stu = malloc(10 * sizeof(struct Student));
+    stu = realloc(stu, 20* sizeof(struct Student));
   
-
     printf("\t\tUnited Group Of Institute\n");
     printf("Choose the function:-\n");
     while(1){
@@ -48,7 +50,9 @@ int main() {
                 break;
         case 2: displayAll(); 
                 break;
-        case 3: searchStudent(); 
+        case 3: printf("Enter roll no.:");
+                scanf("%d",&stu.roll);
+                searchStudent(stu.roll); 
                 break;
         case 4: updateStudent(); 
                 break;
