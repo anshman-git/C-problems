@@ -2088,13 +2088,28 @@
 
 //102
 // To check Strong number
-int main() {
-    int n,temp;
-    printf("Enter n:");
-    scanf("%d",&n);
-    int digit;
-    for(int i=0;digit!=0;i++) {
-    digit=n%10;
-    n=n/10;
-}
-}
+// int fac(int);
+// int main() {
+//     int n,temp=0;
+//     printf("Enter n:");
+//     scanf("%d",&n);
+//     int digit,b=n;
+//     for(int i=0;b!=0;i++) {
+//     digit=b%10;
+//     b=b/10;
+//     temp+=fac(digit);
+// }
+// if(temp==n) {
+//     printf("Strong number");
+// }
+// else {
+//     printf("Not a Strong Number ");
+// }
+// return 0;
+// }
+// int fac(int a) {
+//    if(a==1 || a==0) {
+//     return 1;
+//    }
+//     return a*fac(a-1);
+// }
