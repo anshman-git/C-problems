@@ -2084,3 +2084,17 @@
 //     printf("Move disk %d from rod %c to rod %c\n", n, from_rod, to_rod);
 //     towerofhanoi(n - 1, aux_rod, to_rod, from_rod);
 // }
+
+
+//102
+// To check Strong number
+int main() {
+    int n,temp;
+    printf("Enter n:");
+    scanf("%d",&n);
+    int digit;
+    for(int i=0;digit!=0;i++) {
+    digit=n%10;
+    n=n/10;
+}
+}
