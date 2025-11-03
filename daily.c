@@ -2113,3 +2113,11 @@
 //    }
 //     return a*fac(a-1);
 // }
+
+
+// 103
+// Greatest amoung n numbers
+int main() {
+    int n;
+    printf
+}
