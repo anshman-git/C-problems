@@ -2119,5 +2119,21 @@
 // Greatest amoung n numbers
 int main() {
     int n;
-    printf
+    printf("Enter n:");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the array:-");
+    for(int i=0;i<n;i++) {
+        scanf("%d",&arr[i]);
+    }
+    int a;
+    for(int i=0;i<n;i++) {
+        for(int j=0;j<n;j++) {
+            if(arr[i]>arr[j]) {
+                a=arr[i];
+            }
+        }
+    }
+    printf("%d",a);
+    return 0;
 }
