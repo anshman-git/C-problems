@@ -2117,23 +2117,53 @@
 
 // 103
 // Greatest amoung n numbers
-int main() {
-    int n;
-    printf("Enter n:");
-    scanf("%d",&n);
-    int arr[n];
-    printf("Enter the array:-");
-    for(int i=0;i<n;i++) {
-        scanf("%d",&arr[i]);
-    }
-    int a;
-    for(int i=0;i<n;i++) {
-        for(int j=0;j<n;j++) {
-            if(arr[i]>arr[j]) {
-                a=arr[i];
-            }
-        }
-    }
-    printf("%d",a);
-    return 0;
-}
+// int main() {
+//     int n;
+//     printf("Enter n:");
+//     scanf("%d",&n);
+//     int arr[n];
+//     printf("Enter the array:-");
+//     for(int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     int a;
+//     for(int i=0;i<n;i++) {
+//         for(int j=0;j<n;j++) {
+//             if(arr[i]>arr[j]) {
+//                 a=arr[i];
+//             }
+//         }
+//     }
+//     printf("%d",a);
+//     return 0;
+// }
+
+// 104
+// Reverse words in a sentence
+// void reverse(char str[], int start, int end) {
+//     while (start < end) {
+//         char temp = str[start];
+//         str[start] = str[end];
+//         str[end] = temp;
+//         start++;
+//         end--;
+//     }
+// }
+
+// int main() {
+//     char str[200];
+//     printf("Enter a sentence: ");
+//     fgets(str, sizeof(str), stdin);
+//     str[strcspn(str, "\n")] = 0;
+//     int len = strlen(str);
+//     reverse(str, 0, len - 1);
+//     int start = 0;
+//     for (int i = 0; i <= len; i++) {
+//         if (str[i] == ' ' || str[i] == '\0') {
+//             reverse(str, start, i - 1);
+//             start = i + 1;
+//         }
+//     }
+//     printf("Reversed sentence: %s", str);
+//     return 0;
+// }
