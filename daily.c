@@ -2167,3 +2167,26 @@
 //     printf("Reversed sentence: %s", str);
 //     return 0;
 // }
+
+// 105
+// Use pointer to struct and access data with -> operator
+// struct Student {
+//     char name[50];
+//     int roll;
+//     float marks;
+// };
+// int main() {
+//     struct Student stu;
+//     struct Student *ptr;
+//     ptr = &stu; 
+//     printf("Enter name: ");
+//     scanf("%s",ptr->name);
+//     printf("Enter roll number: ");
+//     scanf("%d",&ptr->roll);
+//     printf("Enter marks: ");
+//     scanf("%f",&ptr->marks);
+//     printf("Name: %s\n", ptr->name);
+//     printf("Roll: %d\n", ptr->roll);
+//     printf("Marks: %.2f\n", ptr->marks);
+//     return 0;
+// }
