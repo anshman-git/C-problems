@@ -5,25 +5,15 @@ void rules();
 
 int main() {
     printf("\t \t Welcome to the Word Chain game\n");
-    printf("1. Star a New Game\n");
-    printf("2. Help/Rules \n");
-    printf("3. Exit \n");
-    int choice;
-    printf("Enter Your Choice : ");
-    scanf("%d",&choice);
-
-    switch (choice)
-    {
-    case 1:start_game();
-        break;
-    case 2:rules();
-    break;
-    case 3:break;
-    default:printf("Enter a Correct Choice:");
-        break;
-    }
+    printf("\n");
+    rules();
+    printf("\nPress Any Key to Start a New Game\n");
+    getchar();
+    start_game();
     printf("----Thanks For Playing----");
+    return 0;
 }
+
 void start_game() {
     char word[100];
     int length;
@@ -43,11 +33,12 @@ void start_game() {
         
     } while(1);
 
-    printf("\n----Wrong word----\n");
+    printf("\nxxxx Wrong word xxxx\n");
     return;
 }
 
 void rules() {
     printf("Rules are:-");
-
+    printf("You have to enter a valid word which start have the last letter of the previous letter");
+    printf("\n");
 }
