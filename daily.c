@@ -4,7 +4,7 @@
 #include<stdlib.h>
 
 
-// DAY  1
+// DAY 1
 // 1
 // print "Hello world"
 // int main() {
