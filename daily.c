@@ -307,7 +307,7 @@
 //     scanf("%d", &n);
 //     for(int i=10; i>=1 ; i--) {
 //         m=n*i; 
-//          printf("%d\n", m);
+//         printf("%d\n", m);
 //     }
 //     return 0;
 // } 
