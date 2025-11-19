@@ -4,7 +4,7 @@
 #include<stdlib.h>
 
 
-// DAY  1
+// DAY 1
 // 1
 // print "Hello world"
 // int main() {
@@ -307,7 +307,7 @@
 //     scanf("%d", &n);
 //     for(int i=10; i>=1 ; i--) {
 //         m=n*i; 
-//          printf("%d\n", m);
+//         printf("%d\n", m);
 //     }
 //     return 0;
 // } 
