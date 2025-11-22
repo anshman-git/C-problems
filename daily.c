@@ -3,7 +3,6 @@
 #include<string.h>
 #include<stdlib.h>
 
-
 // DAY 1
 // 1
 // print "Hello world"
@@ -2190,6 +2189,3 @@
 //     printf("Marks: %.2f\n", ptr->marks);
 //     return 0;
 // }
-// no code today
-// sessional exams are ongoing 
-// hmm
