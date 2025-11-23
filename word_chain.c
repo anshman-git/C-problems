@@ -31,7 +31,7 @@ int main()
         printf("Wrong option");
         break;
     }
-    printf("----Thanks For Playing----");
+    printf("\t----Thanks For Playing----\t");
     return 0;
 }
 
@@ -177,38 +177,37 @@ void one_winner_amoung_n() {
     {
         for (int i = 0; i < n; i++)
         {
-        
-            do
+
+            if (n == 1)
             {
-                printf("Player %d\n", players[i]); 
-                printf("Enter a word starting with %c ", last_word);
-                scanf("%s", word);
-                length = strlen(word);
-                first_word = word[0];
-               
-                if (first_word != last_word)
+                goto a;
+            }
+            printf("Player %d\n", players[i]);
+            printf("Enter a word starting with %c ", last_word);
+            scanf("%s", word);
+            length = strlen(word);
+            first_word = word[0];
+
+            if (first_word != last_word)
+            {
+                for (int j = i; j < n-1; j++)
                 {
-                    for(int j=i;j<n;j++) {
-                        temp=players[j];
-                        players[j]=players[j+1];
-                        players[j+1]=temp;
-                        n--;
-                    }
-                    
-                    break;
+                    temp = players[j];
+                    players[j] = players[j + 1];
+                    players[j + 1] = temp;
                 }
-                if (first_word == last_word)
-                {
-                    last_word = word[length - 1];
-                    break;
-                }
-                  if(n==2) {
-                    goto a;
-                }
-            } while (1);
+                n--;
+                i--;
+                break;
+            }
+            if (first_word == last_word)
+            {
+                last_word = word[length - 1];
+                
+            }
         }
     } while (1);
 a:
-printf("\n Player %d is the WINNER",players[0]);
-//end
+printf("\n Player %d is the WINNER\n",players[0]);
+
 }
