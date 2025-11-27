@@ -267,3 +267,4 @@ a:
     printf("\n Player %d is the WINNER\n", players[0]);
 }
 //some feachers coming soon 
+//some error are in this code 
