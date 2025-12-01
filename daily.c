@@ -2189,3 +2189,67 @@
 //     printf("Marks: %.2f\n", ptr->marks);
 //     return 0;
 // }
+
+
+// 106
+//geek for geeks question...
+// int main() {
+// int a1[50]={1,2,3,4,7,8};
+// int a2[50]={5,6};
+// int a3[50]={0};
+// int a4[50]={0};
+// int b1=sizeof(a1);
+// int b2=sizeof(a2);
+// printf("Enter a number for first array(max 6 numbers) :");
+// for(int i=0;i<6;i++){
+//   scanf("%d",&a1[i]);
+// }
+// printf("Enter a number for second array(max 2 numbers) :");
+// for(int i=0;i<2;i++){
+//   scanf("%d",&a2[i]);
+// }
+// for(int i=0;i<6;i++){
+//   a3[i]=a1[i];
+
+// }
+// for(int i=0;i<2;i++){
+//   a3[i+6]=a2[i];
+
+// }
+// for(int i=0;i<8;i++){
+//   printf("%d ",a3[i]);
+// }
+
+// int max=a3[0];
+
+// printf("\n");
+// for(int i=0;i<8;i++){
+//   if(a3[i]>max){
+//     max=a3[i];
+//   }
+// }
+// printf("\n");
+// int s_max=a3[0];
+// int k=0;
+// for(int i=0;i<8;i++){
+//   if(a3[i]>s_max&&a3[i]<max){
+//     s_max=a3[i];
+//   }
+  
+// }
+// a2[0]=max;
+// a2[1]=s_max;
+// for(int i=0;i<8;i++){
+//   if(a3[i]!=a2[0] && a3[i]!=a2[1]){
+//     a1[k]=a3[i];
+//     k+=1;
+//   }
+// }
+// for(int i=0;i<6;i++){
+//   printf("%d ",a1[i]);
+// }
+// printf("\n");
+// for(int i=0;i<2;i++){
+//   printf("%d ",a2[i]);
+// }
+// }
