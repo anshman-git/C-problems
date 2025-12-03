@@ -129,12 +129,12 @@ void n_player_game()
                 if (!search_in_dictionary_simple(word))
                 {
                     printf("Invalid word (not in dictionary)\n");
-                    break;
+                    goto a;
                 }
                 length = strlen(word);
                 first_word = word[0];
                 c = i;
-                if (first_word != last_word)
+                if (first_word != last_word )
                 {
                     goto a;
                 }
