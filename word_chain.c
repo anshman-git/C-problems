@@ -4,6 +4,7 @@ void one_player_game();
 void two_player_game();
 void n_player_game();
 void one_winner_amoung_n();
+void word_limit_n();
 void rules();
 
 int search_in_dictionary_simple(char *word)
@@ -40,7 +41,7 @@ int main()
     printf("\n");
     rules();
 option:
-    printf("\n1.One Player \n2.Two player \n3.Multiplayer player \n4.Tournament\n");
+    printf("\n1.One Player \n2.Two player \n3.Multiplayer player \n4.Tournament\n5. Word limit mode\n");
     scanf("%d", &op);
     switch (op)
     {
@@ -55,6 +56,9 @@ option:
         break;
     case 4:
         one_winner_amoung_n();
+        break;
+    case 5:
+        word_limit_n();
         break;
     default:
         printf("\nWrong option\n");
@@ -79,6 +83,7 @@ void one_player_game()
     printf("Game Started\n\n");
     do
     {
+        printf("\n");
         printf("Enter a word starting with %c ", last_word);
         scanf("%s", word);
         if (!search_in_dictionary_simple(word))
@@ -123,9 +128,11 @@ void n_player_game()
         {
             do
             {
+                printf("\n");
                 printf("Player %d\n", i);
                 printf("Enter a word starting with %c ", last_word);
                 scanf("%s", word);
+                c = i;
                 if (!search_in_dictionary_simple(word))
                 {
                     printf("Invalid word (not in dictionary)\n");
@@ -133,7 +140,6 @@ void n_player_game()
                 }
                 length = strlen(word);
                 first_word = word[0];
-                c = i;
                 if (first_word != last_word )
                 {
                     goto a;
@@ -234,18 +240,15 @@ void one_winner_amoung_n()
             {
                 goto a;
             }
+            printf("\n");
             printf("Player %d\n", players[i]);
             printf("Enter a word starting with %c ", last_word);
             scanf("%s", word);
-            if (!search_in_dictionary_simple(word))
-            {
-                printf("Invalid word (not in dictionary)\n");
-                break;
-            }
+            
             length = strlen(word);
             first_word = word[0];
 
-            if (first_word != last_word)
+            if (first_word != last_word || !search_in_dictionary_simple(word))
             {
                 for (int j = i; j < n - 1; j++)
                 {
@@ -266,4 +269,64 @@ void one_winner_amoung_n()
 a:
     printf("\n Player %d is the WINNER\n", players[0]);
 }
-//some feachers coming soon 
+
+
+void word_limit_n()
+{
+    char word[100];
+    int length, temp;
+    char first_word;
+    char last_word = 'a';
+    int n, c, a = 1;
+    int limit;
+    printf("Enter number of players...");
+    scanf("%d", &n);
+    int players[n];
+    for (int i = 0; i < n; i++)
+    {
+        players[i] = a++;
+    }
+    limit=3;
+    printf("Game Started\n\n");
+    do
+    {
+        for (int i = 0; i < n; i++)
+        {
+            if (n == 1)
+            {
+                goto a;
+            }
+            printf("\n");
+            printf("Player %d\n", players[i]);
+            printf("Enter only %d letter word--\n",limit);
+            printf("starting with %c ", last_word);
+            scanf("%s",word);
+            
+            length = strlen(word);
+            first_word = word[0];
+
+            if (first_word != last_word || !search_in_dictionary_simple(word) || length != limit)
+            {
+                printf("\nPlayer %d out\n",players[i]);
+                for (int j = i; j < n - 1; j++)
+                {
+                    temp = players[j];
+                    players[j] = players[j + 1];
+                    players[j + 1] = temp;
+                }
+                n--;
+                i--;
+                limit++;
+                break;
+            }
+            if (first_word == last_word)
+            {
+                last_word = word[length - 1];
+            }
+        }
+        
+    } while (1);
+a:
+    printf("\n Player %d is the WINNER\n", players[0]);
+}
+
