@@ -38,7 +38,7 @@ int search_in_dictionary_simple(char *word)
 int main()
 {
     int op;
-    printf("\t \t Welcome to the Word Chain game\n");
+    printf("\n \t \t Welcome to the Word Chain game\n");
     printf("\n");
     rules();
 option:
@@ -81,7 +81,7 @@ void one_player_game()
     char first_word;
     char last_word = 'a';
 
-    printf("Game Started\n\n");
+    printf("\n\nGame Started\n\n");
     do
     {
         printf("\n");
@@ -279,7 +279,7 @@ void word_limit_n()
     char first_word;
     char last_word = 'a';
     int n, c, a = 1;
-    int limit;
+    int limit,round;
     printf("Enter number of players...");
     scanf("%d", &n);
     int players[n];
@@ -325,6 +325,7 @@ void word_limit_n()
                 last_word = word[length - 1];
             }
         }
+        round++;
 
     } while (1);
 a:
