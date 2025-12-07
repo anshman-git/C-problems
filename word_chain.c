@@ -2,7 +2,7 @@
 #include <string.h>
 
 void one_player_game();
-void two_player_game();
+// void two_player_game();
 void n_player_game();
 void one_winner_amoung_n();
 void word_limit_n();
@@ -42,23 +42,23 @@ int main()
     printf("\n");
     rules();
 option:
-    printf("\n1.One Player \n2.Two player \n3.Multiplayer player \n4.Tournament\n5. Word limit mode\n");
+    printf("\n1.Single Player \n2..Multiplayer player \n4.Tournament\n5. Word limit mode\n");
     scanf("%d", &op);
     switch (op)
     {
     case 1:
         one_player_game();
         break;
+    // case 2:
+    //     two_player_game();
+    //     break;
     case 2:
-        two_player_game();
-        break;
-    case 3:
         n_player_game();
         break;
-    case 4:
+    case 3:
         one_winner_amoung_n();
         break;
-    case 5:
+    case 4:
         word_limit_n();
         break;
     default:
@@ -331,3 +331,6 @@ void word_limit_n()
 a:
     printf("\n Player %d is the WINNER\n", players[0]);
 }
+
+
+// uploading soon
