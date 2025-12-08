@@ -331,6 +331,4 @@ void word_limit_n()
 a:
     printf("\n Player %d is the WINNER\n", players[0]);
 }
-
-
-// uploading soon
+//as per the function
