@@ -85,7 +85,7 @@ void one_player_game()
     {
         printf("\n");
         printf("Enter a word starting with %c :", last_word);
-        scanf("%99s", word);
+        scanf("%99s ", word);
         if (!search_in_dictionary_simple(word))
         {
             printf("Invalid word (not in dictionary)\n");
