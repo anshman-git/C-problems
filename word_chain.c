@@ -1,7 +1,11 @@
 #include <stdio.h>
+#include<conio.h>
 #include <string.h>
 #include <ctype.h>
+#include<stdlib.h>
 
+void title();
+void clear();
 void one_player_game();
 void n_player_game();
 void one_winner_amoung_n();
@@ -75,28 +79,33 @@ int search_in_dictionary_simple(char *word)
 
 int main()
 {
-    int op;
-    printf("\n \t \t Welcome to the Word Chain game\n");
-    printf("\n");
+    char op;
+    title();
+    clear();
+    // getchar();
     rules();
+    getchar();
+    printf("\nPress Enter to proceed to menu...");
+    clear();
+    
+
 option:
+    printf("\tMenu\t");
     printf("\n1.Single Player \n2.Multiplayer \n3.Tournament\n4. Word limit mode\n");
-    scanf("%d", &op);
+    op=getch();
+    clear();
     switch (op)
     {
-    case 1:
+    case '1':
         one_player_game();
         break;
-    // case 2:
-    //     two_player_game();
-    //     break;
-    case 2:
+    case '2':
         n_player_game();
         break;
-    case 3:
+    case '3':
         one_winner_amoung_n();
         break;
-    case 4:
+    case '4':
         word_limit_n();
         break;
     default:
@@ -111,6 +120,19 @@ option:
     return 0;
 }
 
+void title() {
+    printf("\n====================================\n");
+    printf("        WORD CHAIN GAME \n");
+    printf("        Made by Anshman\n");
+    printf("====================================\n");
+    printf("\nPress Enter to continue...");
+    getchar();  
+}
+
+void clear() {
+    system("cls");
+}
+
 void rules()
 {
     printf("\n================ GAME RULES ================\n");
@@ -120,30 +142,30 @@ void rules()
 
     printf("1. You must enter a valid word that exists in the dictionary file (words.txt).\n");
     printf("2. The word must start with the LAST letter of the previous word.\n");
-    printf("3. No repeating words — once used, it cannot be used again.\n");
+    printf("3. No repeating words -- once used, it cannot be used again.\n");
 
     printf("\n-- GAME MODES --\n");
 
     printf("1. Single Player Mode:\n");
-    printf("   • You keep entering words.\n");
-    printf("   • If your word is invalid or starts with the wrong letter, the game ends.\n");
-    printf("   • Your score is the number of correct words you entered.\n\n");
+    printf("   - You keep entering words.\n");
+    printf("   - If your word is invalid or starts with the wrong letter, the game ends.\n");
+    printf("   - Your score is the number of correct words you entered.\n\n");
 
     printf("2. Multiplayer Mode:\n");
-    printf("   • All players play in a fixed order.\n");
-    printf("   • The player who enters an invalid or wrong word loses immediately.\n\n");
+    printf("   - All players play in a fixed order.\n");
+    printf("   - The player who enters an invalid or wrong word loses immediately.\n\n");
 
     printf("3. Tournament Mode (One Winner Among All):\n");
-    printf("   • All players start together.\n");
-    printf("   • If any player enters a wrong word, they are eliminated.\n");
-    printf("   • Last remaining player is the WINNER.\n\n");
+    printf("   - All players start together.\n");
+    printf("   - If any player enters a wrong word, they are eliminated.\n");
+    printf("   - Last remaining player is the WINNER.\n\n");
 
     printf("4. Word Limit Mode:\n");
-    printf("   • Every few rounds, the word length limit increases.\n");
-    printf("   • You must enter a word with EXACT length.\n");
-    printf("   • Invalid length = immediate elimination.\n\n");
+    printf("   - Every few rounds, the word length limit increases.\n");
+    printf("   - You must enter a word with EXACT length.\n");
+    printf("   - Invalid length = immediate elimination.\n\n");
 
-    printf("Tip: Be quick, be sharp, and let the letters flow!\n");
+    printf("Tip: Be quick, be sharp, and let the letters flow!\n\n");
     printf("============================================\n\n");
 }
 
@@ -191,7 +213,7 @@ void one_player_game()
 
     } while (1);
 
-    printf("\nxxxx Wrong word xxxx\n");
+//  printf("\nxxxx Wrong word xxxx\n");
     printf("Total score : %d\n", score);
 }
 
@@ -250,7 +272,6 @@ void n_player_game()
 
 end:
     printf("\nPlayer %d loss\n", c);
-    printf("\nxxxx Wrong word xxxx\n");
 }
 
 
@@ -312,7 +333,7 @@ void one_winner_amoung_n()
             first_word = word[0];
             if (first_word != last_word)
             {
-                printf("Wrong starting letter — Player %d out\n", players[i]);
+                printf("Wrong starting letter - Player %d out\n", players[i]);
                 for (int j = i; j < n - 1; j++)
                 {
                     players[j] = players[j + 1];
@@ -325,12 +346,13 @@ void one_winner_amoung_n()
             add_used_word(word);
             last_word = word[length - 1];
         }
+        if (n == 1) {
+        printf("\n Player %d is the WINNER\n", players[0]);
+        break;
+        }
     }
-    
-    if (n == 1)
-    printf("\n Player %d is the WINNER\n", players[0]);
-    else
     printf("\nGame ended.\n");
+    
 }
 
 void word_limit_n()
@@ -399,10 +421,10 @@ void word_limit_n()
             last_word = word[length - 1];
         }
         round++;
+        if (n == 1)
+        printf("\n Player %d is the WINNER\n", players[0]);
+        else
+        printf("\nGame ended.\n");
     }
 
-    if (n == 1)
-    printf("\n Player %d is the WINNER\n", players[0]);
-    else
-    printf("\nGame ended.\n");
 }
