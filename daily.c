@@ -2192,3 +2192,62 @@
 // }
 
 
+//  106
+// Given an array arr[] consisting of n integers, the task is to find all the array elements which occurs more than floor(n/3) times.
+
+// void sorting(int arr[], int);
+// int main()
+// {
+//     int n;
+//     printf("Enter the size of the arr:");
+//     scanf("%d", &n);
+//     int arr[n];
+//     printf("Enter the arr: ");
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d", &arr[i]);
+//     }
+//     sorting(arr, n);
+
+//     int floor = n / 3;
+//     int count = 1;
+//     for (int i = 1; i < n; i++)
+//     {
+//         if (arr[i] == arr[i - 1])
+//         {
+//             count++;
+//         }
+//         else
+//         {
+//             if (count > floor)
+//             {
+//                 printf("%d ", arr[i - 1]);
+//             }
+//             count = 1;
+//         }
+//     }
+
+//     if (count > floor)
+//     {
+//         printf("%d ", arr[n - 1]);
+//     }
+
+//     return 0;
+// }
+
+// void sorting(int arr[], int n)
+// {
+//     int temp;
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < n; j++)
+//         {
+//             if (arr[i] < arr[j])
+//             {
+//                 temp = arr[i];
+//                 arr[i] = arr[j];
+//                 arr[j] = temp;
+//             }
+//         }
+//     }
+// }
