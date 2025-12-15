@@ -2251,3 +2251,37 @@
 //         }
 //     }
 // }
+
+// 107
+// You are given an integer array arr[]. Your task is to find the smallest positive number missing from the array.
+// int main()
+// {
+//     int n;
+//     printf("Enter the size of the arr:");
+//     scanf("%d", &n);
+//     int arr[n];
+//     printf("Enter the arr: ");
+//     for (int i = 0; i < n; i++)
+//     {
+//         scanf("%d", &arr[i]);
+//     }
+//     int m=missingNumber(arr,n);
+//     printf("missing  number is %d",m);
+//     return 0;
+// }
+// int missingNumber(int arr[], int n) {
+//     for (int i = 1; i <= n + 1; i++) {
+//         int found = 0;
+
+//         for (int j = 0; j < n; j++) {
+//             if (arr[j] == i) {
+//                 found = 1;
+//                 break;
+//             }
+//         }
+
+//         if (found == 0) {
+//             return i;
+//         }
+//     }
+// }
