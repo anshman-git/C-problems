@@ -2287,5 +2287,23 @@
 // }
 
 // 108
-// Given two binary strings s1 and s2 consisting of only 0s and 1s. Find the resultant string after adding the two Binary Strings.
-// 
+// Given a string, , consisting of alphabets and digits, find the frequency of each digit in the given string.
+// int main() {
+
+//     char str[1000];
+//     scanf("%s",str);
+//     char nums[10]={'0','1','2','3','4','5','6','7','8','9'};
+//     int len=strlen(str)-1;
+//     int count[10]={0};
+//     for(int i=0;i<10;i++) {
+//         for(int j=0;j<=len;j++) {
+//             if(nums[i]==str[j]) {
+//                 count[i]++;
+//             }
+//         }
+//     } 
+//     for(int k=0;k<10;k++) {
+//     printf("%d ",count[k]);
+//     }
+//     return 0;
+// }
