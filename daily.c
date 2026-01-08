@@ -2569,3 +2569,31 @@
 //     }
 //     return 0;
 // }
+
+// 116
+// Insertion sort
+// void insertionSort(int arr[], int n) {
+//     int i, key, j;
+//     for (i = 1; i < n; i++) {
+//         key = arr[i];
+//         j = i - 1;
+//         while (j >= 0 && arr[j] > key) {
+//             arr[j + 1] = arr[j];
+//             j = j - 1;
+//         }
+//         arr[j + 1] = key;
+//     }
+// }
+
+// int main() {
+//     int data[] = {64, 34, 25, 12, 22, 11, 90};
+//     int n = sizeof(data) / sizeof(data[0]);
+
+//     insertionSort(data, n);
+
+//     printf("Sorted array: \n");
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", data[i]);
+//     }
+//     return 0;
+// }
