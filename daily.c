@@ -2602,38 +2602,83 @@
 
 // 117
 // Merge sort
-void merge(int arr[], int left, int mid, int right) {
-    int i = left, j = mid + 1, k = left;
-    int temp[right + 1];
+// void merge(int arr[], int left, int mid, int right) {
+//     int i = left, j = mid + 1, k = left;
+//     int temp[right + 1];
     
-    while (i <= mid && j <= right) {
-        if (arr[i] <= arr[j]) {
-            temp[k++] = arr[i++];
-        } else {
-            temp[k++] = arr[j++];
+//     while (i <= mid && j <= right) {
+//         if (arr[i] <= arr[j]) {
+//             temp[k++] = arr[i++];
+//         } else {
+//             temp[k++] = arr[j++];
+//         }
+//     }
+    
+//     while (i <= mid) {
+//         temp[k++] = arr[i++];
+//     }
+    
+//     while (j <= right) {
+//         temp[k++] = arr[j++];
+//     }
+    
+//     for (int i = left; i <= right; i++) {
+//         arr[i] = temp[i];
+//     }
+// }
+
+// void mergeSort(int arr[], int left, int right) {
+//     if (left < right) {
+//         int mid = left + (right - left) / 2;
+        
+//         mergeSort(arr, left, mid);
+//         mergeSort(arr, mid + 1, right);
+//         merge(arr, left, mid, right);
+//     }
+// }
+
+// int main() {
+//     int data[] = {64, 34, 25, 12, 22, 11, 90};
+//     int n = sizeof(data) / sizeof(data[0]);
+
+//     mergeSort(data, 0, n - 1);
+
+//     printf("Sorted array: \n");
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", data[i]);
+//     }
+//     return 0;
+// }
+
+// 118
+// Merge sort
+// Quick sort
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int i = low - 1;
+    
+    for (int j = low; j < high; j++) {
+        if (arr[j] < pivot) {
+            i++;
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
         }
     }
     
-    while (i <= mid) {
-        temp[k++] = arr[i++];
-    }
+    int temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
     
-    while (j <= right) {
-        temp[k++] = arr[j++];
-    }
-    
-    for (int i = left; i <= right; i++) {
-        arr[i] = temp[i];
-    }
+    return i + 1;
 }
 
-void mergeSort(int arr[], int left, int right) {
-    if (left < right) {
-        int mid = left + (right - left) / 2;
+void quickSort(int arr[], int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
         
-        mergeSort(arr, left, mid);
-        mergeSort(arr, mid + 1, right);
-        merge(arr, left, mid, right);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
     }
 }
 
@@ -2641,7 +2686,7 @@ int main() {
     int data[] = {64, 34, 25, 12, 22, 11, 90};
     int n = sizeof(data) / sizeof(data[0]);
 
-    mergeSort(data, 0, n - 1);
+    quickSort(data, 0, n - 1);
 
     printf("Sorted array: \n");
     for (int i = 0; i < n; i++) {
