@@ -2651,46 +2651,77 @@
 // }
 
 // 118
-// Merge sort
 // Quick sort
-int partition(int arr[], int low, int high) {
-    int pivot = arr[high];
-    int i = low - 1;
+// int partition(int arr[], int low, int high) {
+//     int pivot = arr[high];
+//     int i = low - 1;
     
-    for (int j = low; j < high; j++) {
-        if (arr[j] < pivot) {
-            i++;
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-        }
-    }
+//     for (int j = low; j < high; j++) {
+//         if (arr[j] < pivot) {
+//             i++;
+//             int temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//         }
+//     }
     
-    int temp = arr[i + 1];
-    arr[i + 1] = arr[high];
-    arr[high] = temp;
+//     int temp = arr[i + 1];
+//     arr[i + 1] = arr[high];
+//     arr[high] = temp;
     
-    return i + 1;
-}
+//     return i + 1;
+// }
 
-void quickSort(int arr[], int low, int high) {
-    if (low < high) {
-        int pi = partition(arr, low, high);
+// void quickSort(int arr[], int low, int high) {
+//     if (low < high) {
+//         int pi = partition(arr, low, high);
         
-        quickSort(arr, low, pi - 1);
-        quickSort(arr, pi + 1, high);
-    }
-}
+//         quickSort(arr, low, pi - 1);
+//         quickSort(arr, pi + 1, high);
+//     }
+// }
 
-int main() {
-    int data[] = {64, 34, 25, 12, 22, 11, 90};
-    int n = sizeof(data) / sizeof(data[0]);
+// int main() {
+//     int data[] = {64, 34, 25, 12, 22, 11, 90};
+//     int n = sizeof(data) / sizeof(data[0]);
 
-    quickSort(data, 0, n - 1);
+//     quickSort(data, 0, n - 1);
 
-    printf("Sorted array: \n");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", data[i]);
-    }
-    return 0;
-}
+//     printf("Sorted array: \n");
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", data[i]);
+//     }
+//     return 0;
+// }
+
+
+// 119
+// linear search
+// int main() {
+//     int n;
+//     printf("Enter size of array: ");
+//     scanf("%d", &n);
+//     int arr[n];
+//     printf("Enter array elements: ");
+//     for(int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+//     int key;
+//     printf("Enter element to search: ");
+//     scanf("%d", &key);
+    
+//     int found = -1;
+//     for(int i = 0; i < n; i++) {
+//         if(arr[i] == key) {
+//             found = i;
+//             break;
+//         }
+//     }
+    
+//     if(found != -1) {
+//         printf("Element found at index: %d\n", found);
+//     } else {
+//         printf("Element not found\n");
+//     }
+//     return 0;
+// }
