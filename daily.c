@@ -2768,46 +2768,100 @@
 
 // 121
 // Ternary Search
-int ternarySearch(int arr[], int left, int right, int key) {
-    while (left <= right) {
-        int mid1 = left + (right - left) / 3;
-        int mid2 = right - (right - left) / 3;
+// int ternarySearch(int arr[], int left, int right, int key) {
+//     while (left <= right) {
+//         int mid1 = left + (right - left) / 3;
+//         int mid2 = right - (right - left) / 3;
         
-        if (arr[mid1] == key) {
-            return mid1;
-        } else if (arr[mid2] == key) {
-            return mid2;
-        } else if (key < arr[mid1]) {
-            right = mid1 - 1;
-        } else if (key > arr[mid2]) {
-            left = mid2 + 1;
-        } else {
-            left = mid1 + 1;
-            right = mid2 - 1;
-        }
-    }
-    return -1;
-}
+//         if (arr[mid1] == key) {
+//             return mid1;
+//         } else if (arr[mid2] == key) {
+//             return mid2;
+//         } else if (key < arr[mid1]) {
+//             right = mid1 - 1;
+//         } else if (key > arr[mid2]) {
+//             left = mid2 + 1;
+//         } else {
+//             left = mid1 + 1;
+//             right = mid2 - 1;
+//         }
+//     }
+//     return -1;
+// }
 
-int main() {
-    int n;
-    printf("Enter size of array: ");
-    scanf("%d", &n);
-    int arr[n];
-    printf("Enter sorted array elements: ");
-    for(int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
-    int key;
-    printf("Enter element to search: ");
-    scanf("%d", &key);
+// int main() {
+//     int n;
+//     printf("Enter size of array: ");
+//     scanf("%d", &n);
+//     int arr[n];
+//     printf("Enter sorted array elements: ");
+//     for(int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+//     int key;
+//     printf("Enter element to search: ");
+//     scanf("%d", &key);
     
-    int result = ternarySearch(arr, 0, n - 1, key);
+//     int result = ternarySearch(arr, 0, n - 1, key);
     
-    if(result != -1) {
-        printf("Element found at index: %d\n", result);
-    } else {
-        printf("Element not found\n");
-    }
-    return 0;
-}
+//     if(result != -1) {
+//         printf("Element found at index: %d\n", result);
+//     } else {
+//         printf("Element not found\n");
+//     }
+//     return 0;
+// }
+
+
+// 122
+// Exp Sort
+// Exponential Search
+// int binarySearch(int arr[], int left, int right, int key) {
+//     while (left <= right) {
+//         int mid = left + (right - left) / 2;
+//         if (arr[mid] == key) {
+//             return mid;
+//         } else if (arr[mid] < key) {
+//             left = mid + 1;
+//         } else {
+//             right = mid - 1;
+//         }
+//     }
+//     return -1;
+// }
+
+// int exponentialSearch(int arr[], int n, int key) {
+//     if (arr[0] == key) {
+//         return 0;
+//     }
+    
+//     int i = 1;
+//     while (i < n && arr[i] < key) {
+//         i = i * 2;
+//     }
+    
+//     return binarySearch(arr, i / 2, (i < n) ? i : n - 1, key);
+// }
+
+// int main() {
+//     int n;
+//     printf("Enter size of array: ");
+//     scanf("%d", &n);
+//     int arr[n];
+//     printf("Enter sorted array elements: ");
+//     for(int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+//     int key;
+//     printf("Enter element to search: ");
+//     scanf("%d", &key);
+    
+//     int result = exponentialSearch(arr, n, key);
+    
+//     if(result != -1) {
+//         printf("Element found at index: %d\n", result);
+//     } else {
+//         printf("Element not found\n");
+//     }
+//     return 0;
+// }
