@@ -2865,3 +2865,109 @@
 //     }
 //     return 0;
 // }
+
+// 123
+// Split Search
+// Jump Search
+// int jumpSearch(int arr[], int n, int key) {
+//     int step = sqrt(n);
+//     int prev = 0;
+    
+//     while (arr[(step < n) ? step : n - 1] < key) {
+//         prev = step;
+//         step += sqrt(n);
+//         if (prev >= n) {
+//             return -1;
+//         }
+//     }
+    
+//     while (arr[prev] < key) {
+//         prev++;
+//         if (prev == (step < n) ? step : n) {
+//             return -1;
+//         }
+//     }
+    
+//     if (arr[prev] == key) {
+//         return prev;
+//     }
+    
+//     return -1;
+// }
+
+// int main() {
+//     int n;
+//     printf("Enter size of array: ");
+//     scanf("%d", &n);
+//     int arr[n];
+//     printf("Enter sorted array elements: ");
+//     for(int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+//     int key;
+//     printf("Enter element to search: ");
+//     scanf("%d", &key);
+    
+//     int result = jumpSearch(arr, n, key);
+    
+//     if(result != -1) {
+//         printf("Element found at index: %d\n", result);
+//     } else {
+//         printf("Element not found\n");
+//     }
+//     return 0;
+// }
+
+
+//124
+// Exp Search
+// Exponential Search
+// int binarySearch(int arr[], int left, int right, int key) {
+//     while (left <= right) {
+//         int mid = left + (right - left) / 2;
+//         if (arr[mid] == key) {
+//             return mid;
+//         } else if (arr[mid] < key) {
+//             left = mid + 1;
+//         } else {
+//             right = mid - 1;
+//         }
+//     }
+//     return -1;
+// }
+
+// int exponentialSearch(int arr[], int n, int key) {
+//     if (arr[0] == key) {
+//         return 0;
+//     }
+    
+//     int i = 1;
+//     while (i < n && arr[i] < key) {
+//         i = i * 2;
+//     }
+    
+//     return binarySearch(arr, i / 2, (i < n) ? i : n - 1, key);
+// }
+
+// int main() {
+//     int n;
+//     printf("Enter size of array: ");
+//     scanf("%d", &n);
+//     int arr[n];
+//     printf("Enter sorted array elements: ");
+//     for(int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+//     int key;
+//     printf("Enter element to search: ");
+//     scanf("%d", &key);
+    
+//     int result = exponentialSearch(arr, n, key);
+    
+//     if(result != -1) {
+//         printf("Element found at index: %d\n", result);
+//     } else {
+//         printf("Element not found\n");
+//     }
+//     return 0;
+// }
