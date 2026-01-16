@@ -2971,3 +2971,42 @@
 //     }
 //     return 0;
 // }
+
+// 125
+// Rotate an array to the left by k positions using only pointer arithmetic — no extra array, no element-by-element swapping.
+
+// void reverse(int *arr, int start, int end) {
+//     while (start < end) {
+//         int temp = arr[start];
+//         arr[start] = arr[end];
+//         arr[end] = temp;
+//         start++;
+//         end--;
+//     }
+// }
+
+// int main() {
+//     int arr[5] = {1, 2, 3, 4, 5};
+//     int n = 5;
+//     int k;
+
+//     printf("Enter positions to rotate: ");
+//     scanf("%d", &k);
+
+//     k = k % n;   // handles k > n
+
+//     // step 1: reverse first k elements
+//     reverse(arr, 0, k - 1);
+
+//     // step 2: reverse remaining elements
+//     reverse(arr, k, n - 1);
+
+//     // step 3: reverse whole array
+//     reverse(arr, 0, n - 1);
+
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", arr[i]);
+//     }
+
+//     return 0;
+// }
