@@ -3010,43 +3010,43 @@
 
 // 126
 // Check if two strings are rotations of each other.
-int isRotation(char *s1, char *s2) {
-    int len1 = 0, len2 = 0;
+// int isRotation(char *s1, char *s2) {
+//     int len1 = 0, len2 = 0;
 
-    while (s1[len1] != '\0') len1++;
-    while (s2[len2] != '\0') len2++;
+//     while (s1[len1] != '\0') len1++;
+//     while (s2[len2] != '\0') len2++;
 
-    if (len1 != len2) return 0;
+//     if (len1 != len2) return 0;
 
-    for (int shift = 0; shift < len1; shift++) {
-        int match = 1;
+//     for (int shift = 0; shift < len1; shift++) {
+//         int match = 1;
 
-        for (int i = 0; i < len1; i++) {
-            if (s1[i] != s2[(i + shift) % len1]) {
-                match = 0;
-                break;
-            }
-        }
+//         for (int i = 0; i < len1; i++) {
+//             if (s1[i] != s2[(i + shift) % len1]) {
+//                 match = 0;
+//                 break;
+//             }
+//         }
 
-        if (match) return 1;
-    }
+//         if (match) return 1;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
-int main() {
-    char s1[50], s2[50];
+// int main() {
+//     char s1[50], s2[50];
 
-    printf("Enter first string: ");
-    scanf("%s", s1);
+//     printf("Enter first string: ");
+//     scanf("%s", s1);
 
-    printf("Enter second string: ");
-    scanf("%s", s2);
+//     printf("Enter second string: ");
+//     scanf("%s", s2);
 
-    if (isRotation(s1, s2))
-        printf("Yes, strings are rotations\n");
-    else
-        printf("No, strings are not rotations\n");
+//     if (isRotation(s1, s2))
+//         printf("Yes, strings are rotations\n");
+//     else
+//         printf("No, strings are not rotations\n");
 
-    return 0;
-}
+//     return 0;
+// }
