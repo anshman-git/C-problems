@@ -3064,3 +3064,37 @@
 //   }
 //   return 0;
 // } 
+
+// 128
+// leet code #sum
+// int main()
+// {
+//     int n;
+//     printf("Enter the size of array:");
+//     scanf("%d",&n);
+
+//     int arr[n];
+//     printf("Enter array=");
+//     for(int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     int target;
+//     printf("Enter target:");
+//     scanf("%d",&target);
+
+//     int a,b;
+//     do {
+//         for(int i=0;i<n;i++) {
+//             for(int j=0;j<n;j++) {
+//                 if(arr[i]+arr[j]==target) {
+//                     a=j;
+//                     b=i;
+//                     break;
+//                 }
+//             }
+//         }
+//         break;
+//     }while(1);
+//     printf("[%d, %d]",a,b);
+//     return 0;
+// }
