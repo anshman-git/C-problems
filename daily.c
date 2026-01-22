@@ -3156,3 +3156,27 @@
 //     printf("%s",week[(5+oddDays)%7]);
 //     return 0;
 // }
+
+
+// 130
+// generate all the prime numbers within an range.
+// int main (void)
+// {
+//     int n;
+//     scanf("%d",&n);
+//     int arr[1000]={0};
+
+//     for(int i=2;i*i<=n;i++)
+//     {
+//         for(int j=i;i*j<=n;j++)
+//         {
+//             arr[i*j]=1;
+//         }
+//     }
+//     for(int i=2;i<=n;i++)
+//     {
+//         if(!arr[i])
+//         printf("%d ",i);
+//     }
+//     return 0;
+// }
