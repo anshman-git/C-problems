@@ -2572,32 +2572,41 @@
 
 // 116
 // Insertion sort
-// void insertionSort(int arr[], int n) {
-//     int i, key, j;
-//     for (i = 1; i < n; i++) {
-//         key = arr[i];
-//         j = i - 1;
-//         while (j >= 0 && arr[j] > key) {
-//             arr[j + 1] = arr[j];
-//             j = j - 1;
-//         }
-//         arr[j + 1] = key;
+// void insertion_sort(int arr[],int n);
+// int main()
+// {
+//     int n;
+//     printf("Enter the size of array:");
+//     scanf("%d",&n);
+
+//     int arr[n];
+//     printf("Enter array=");
+//     for(int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
 //     }
-// }
-
-// int main() {
-//     int data[] = {64, 34, 25, 12, 22, 11, 90};
-//     int n = sizeof(data) / sizeof(data[0]);
-
-//     insertionSort(data, n);
-
-//     printf("Sorted array: \n");
-//     for (int i = 0; i < n; i++) {
-//         printf("%d ", data[i]);
+    
+//     insertion_sort(arr,n);
+    
+//     for(int i=0;i<n;i++) {
+//         printf("%d",arr[i]);
 //     }
+
+
 //     return 0;
 // }
 
+// void insertion_sort(int arr[],int n) {
+//     int key;
+//     for(int i=0;i<n;i++) {
+//         key=arr[i];
+//         int j=i-1;
+//         while(j>=0 && arr[j]>key) {
+//             arr[j+1]=arr[j];
+//             j=j-1;
+//         }
+//         arr[j+1]=key;
+//     }
+// }
 
 
 // 117
@@ -3160,7 +3169,7 @@
 
 // 130
 // generate all the prime numbers within an range.
-// int main (void)
+// int main()
 // {
 //     int n;
 //     scanf("%d",&n);
