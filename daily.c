@@ -3,6 +3,10 @@
 #include<string.h>
 #include<stdlib.h>
 
+
+noou
+
+
 // DAY 1
 // 1
 // print "Hello world"
