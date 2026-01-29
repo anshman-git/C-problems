@@ -3190,3 +3190,41 @@
 //     }
 //     return 0;
 // }
+
+// 131
+// Given a matrix mat[][] of size m x n, the task is to print all elements of the matrix in spiral form.
+
+// int main() {
+//     int row,col;
+//     printf("Enter row and column");
+//     scanf("%d %d",&row,&col);
+
+//     int mat[row][col];
+    
+//     for(int i=0;i<row;i++) {
+//         for(int j=0;j<col;j++) {
+//             scanf("%d",&mat[i][j]);
+//         }
+//     }
+
+//     int s_mat[row*col];
+//     int a=0;
+
+//     for(int i=0;i<row;i++) {
+//         for (int j=0;j<col;j++) {
+//             s_mat[a++]=mat[i][j];
+//             if(j==col-1) {
+//                 for(int k=1;k<col-1;k++) {
+//                 s_mat[a++]=mat[k][j];
+//                 }
+//             }
+//         }
+//     }
+
+//     for( int i=0;i<row*col;i++) {
+//         printf("%d ",s_mat[i]);
+//     }
+
+// }
+
+// incomplete
