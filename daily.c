@@ -3194,37 +3194,52 @@
 // 131
 // Given a matrix mat[][] of size m x n, the task is to print all elements of the matrix in spiral form.
 
-// int main() {
-//     int row,col;
-//     printf("Enter row and column");
-//     scanf("%d %d",&row,&col);
+int main() {
+    int row,col;
 
-//     int mat[row][col];
+    // printf("Enter row and column");
+    // scanf("%d %d",&row,&col);
+
+    int mat[4][4]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+    row=col=4;
+    // for(int i=0;i<row;i++) {
+    //     for(int j=0;j<col;j++) {
+    //         scanf("%d",&mat[i][j]);
+    //     }
+    // }
+
+
+    int s_mat[row*col];
+    int a=0;
+
+    int right=0;
+    int left=col-1;
+    int top=0;
+    int bottom=row-1;
     
-//     for(int i=0;i<row;i++) {
-//         for(int j=0;j<col;j++) {
-//             scanf("%d",&mat[i][j]);
-//         }
-//     }
+    while (1) {
+        for(int i=right;i<=left;i++) {
+            s_mat[a++]=mat[top][i];
+        }
+        top++;
+        for(int j=top;j<=bottom;j++) {
+            s_mat[a++]=mat[j][left];
+        } 
+        left--;   
+        for(int k=left;k>=right;k--) {
+            s_mat[a++]=mat[bottom][k];
+        }
+        bottom--;
+        for(int l=bottom;l>=right;l--) {
+            s_mat[a++]=mat[l][right];
+        }
+        right++;
 
-//     int s_mat[row*col];
-//     int a=0;
-
-//     for(int i=0;i<row;i++) {
-//         for (int j=0;j<col;j++) {
-//             s_mat[a++]=mat[i][j];
-//             if(j==col-1) {
-//                 for(int k=1;k<col-1;k++) {
-//                 s_mat[a++]=mat[k][j];
-//                 }
-//             }
-//         }
-//     }
-
-//     for( int i=0;i<row*col;i++) {
-//         printf("%d ",s_mat[i]);
-//     }
-
-// }
-
-// incomplete
+        if(a==row*col) {
+            break;
+        }
+    }
+    for( int i=0;i<row*col;i++) {
+        printf("%d ",s_mat[i]);
+    }
+}
