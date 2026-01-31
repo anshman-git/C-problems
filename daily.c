@@ -2612,11 +2612,11 @@
 
 // 117
 // Merge sort
-// void merge(int arr[], int left, int mid, int right) {
-//     int i = left, j = mid + 1, k = left;
-//     int temp[right + 1];
+// void merge(int arr[], int right, int mid, int left) {
+//     int i = right, j = mid + 1, k = right;
+//     int temp[left + 1];
     
-//     while (i <= mid && j <= right) {
+//     while (i <= mid && j <= left) {
 //         if (arr[i] <= arr[j]) {
 //             temp[k++] = arr[i++];
 //         } else {
@@ -2628,22 +2628,22 @@
 //         temp[k++] = arr[i++];
 //     }
     
-//     while (j <= right) {
+//     while (j <= left) {
 //         temp[k++] = arr[j++];
 //     }
     
-//     for (int i = left; i <= right; i++) {
+//     for (int i = right; i <= left; i++) {
 //         arr[i] = temp[i];
 //     }
 // }
 
-// void mergeSort(int arr[], int left, int right) {
-//     if (left < right) {
-//         int mid = left + (right - left) / 2;
+// void mergeSort(int arr[], int right, int left) {
+//     if (right < left) {
+//         int mid = right + (left - right) / 2;
         
-//         mergeSort(arr, left, mid);
-//         mergeSort(arr, mid + 1, right);
-//         merge(arr, left, mid, right);
+//         mergeSort(arr, right, mid);
+//         mergeSort(arr, mid + 1, left);
+//         merge(arr, right, mid, left);
 //     }
 // }
 
@@ -2738,16 +2738,16 @@
 
 //120
 // Binary Search
-// int binarySearch(int arr[], int left, int right, int key) {
-//     while (left <= right) {
-//         int mid = left + (right - left) / 2;
+// int binarySearch(int arr[], int right, int left, int key) {
+//     while (right <= left) {
+//         int mid = right + (left - right) / 2;
         
 //         if (arr[mid] == key) {
 //             return mid;
 //         } else if (arr[mid] < key) {
-//             left = mid + 1;
+//             right = mid + 1;
 //         } else {
-//             right = mid - 1;
+//             left = mid - 1;
 //         }
 //     }
 //     return -1;
@@ -2778,22 +2778,22 @@
 
 // 121
 // Ternary Search
-// int ternarySearch(int arr[], int left, int right, int key) {
-//     while (left <= right) {
-//         int mid1 = left + (right - left) / 3;
-//         int mid2 = right - (right - left) / 3;
+// int ternarySearch(int arr[], int right, int left, int key) {
+//     while (right <= left) {
+//         int mid1 = right + (left - right) / 3;
+//         int mid2 = left - (left - right) / 3;
         
 //         if (arr[mid1] == key) {
 //             return mid1;
 //         } else if (arr[mid2] == key) {
 //             return mid2;
 //         } else if (key < arr[mid1]) {
-//             right = mid1 - 1;
+//             left = mid1 - 1;
 //         } else if (key > arr[mid2]) {
-//             left = mid2 + 1;
+//             right = mid2 + 1;
 //         } else {
-//             left = mid1 + 1;
-//             right = mid2 - 1;
+//             right = mid1 + 1;
+//             left = mid2 - 1;
 //         }
 //     }
 //     return -1;
@@ -2826,15 +2826,15 @@
 // 122
 // Exp Sort
 // Exponential Search
-// int binarySearch(int arr[], int left, int right, int key) {
-//     while (left <= right) {
-//         int mid = left + (right - left) / 2;
+// int binarySearch(int arr[], int right, int left, int key) {
+//     while (right <= left) {
+//         int mid = right + (left - right) / 2;
 //         if (arr[mid] == key) {
 //             return mid;
 //         } else if (arr[mid] < key) {
-//             left = mid + 1;
+//             right = mid + 1;
 //         } else {
-//             right = mid - 1;
+//             left = mid - 1;
 //         }
 //     }
 //     return -1;
@@ -2932,15 +2932,15 @@
 //124
 // Exp Search
 // Exponential Search
-// int binarySearch(int arr[], int left, int right, int key) {
-//     while (left <= right) {
-//         int mid = left + (right - left) / 2;
+// int binarySearch(int arr[], int right, int left, int key) {
+//     while (right <= left) {
+//         int mid = right + (left - right) / 2;
 //         if (arr[mid] == key) {
 //             return mid;
 //         } else if (arr[mid] < key) {
-//             left = mid + 1;
+//             right = mid + 1;
 //         } else {
-//             right = mid - 1;
+//             left = mid - 1;
 //         }
 //     }
 //     return -1;
@@ -2983,7 +2983,7 @@
 // }
 
 // 125
-// Rotate an array to the left by k positions using only pointer arithmetic — no extra array, no element-by-element swapping.
+// Rotate an array to the right by k positions using only pointer arithmetic — no extra array, no element-by-element swapping.
 
 // void reverse(int *arr, int start, int end) {
 //     while (start < end) {
@@ -3194,14 +3194,17 @@
 // 131
 // Given a matrix mat[][] of size m x n, the task is to print all elements of the matrix in spiral form.
 
-int main() {
-    int row,col;
+// int main() {
+//     int row,col;
 
-    // printf("Enter row and column");
-    // scanf("%d %d",&row,&col);
+//     printf("Enter row and column");
+//     scanf("%d %d",&row,&col);
 
-    int mat[4][4]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
-    row=col=4;
+//      int mat[row][col];
+
+//     // int mat[4][4]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+//     // row=col=4;
+
     // for(int i=0;i<row;i++) {
     //     for(int j=0;j<col;j++) {
     //         scanf("%d",&mat[i][j]);
@@ -3209,37 +3212,129 @@ int main() {
     // }
 
 
-    int s_mat[row*col];
-    int a=0;
+//     int s_mat[row*col];
+//     int a=0;
 
-    int right=0;
-    int left=col-1;
-    int top=0;
-    int bottom=row-1;
+//     int left=0;       //starting column
+//     int right=col-1;    //ending column
+//     int top=0;         //starting row
+//     int bottom=row-1;  //ending row
     
-    while (1) {
-        for(int i=right;i<=left;i++) {
-            s_mat[a++]=mat[top][i];
-        }
-        top++;
-        for(int j=top;j<=bottom;j++) {
-            s_mat[a++]=mat[j][left];
-        } 
-        left--;   
-        for(int k=left;k>=right;k--) {
-            s_mat[a++]=mat[bottom][k];
-        }
-        bottom--;
-        for(int l=bottom;l>=right;l--) {
-            s_mat[a++]=mat[l][right];
-        }
-        right++;
+//     while (top<=bottom && left<=right) {
+//         for(int i=left;i<=right;i++) {
+//             s_mat[a++]=mat[left][i];
+//         }
+//         for(int j=top+1;j<=bottom;j++) {
+//             s_mat[a++]=mat[j][bottom];
+//         } 
+//         for(int k=right-1;k>=left;k--) {
+//             if(top==bottom) {
+//                 break;
+//             }
+//             s_mat[a++]=mat[bottom][k];
+//         }
+//         for(int l=bottom-1;l>=top+1;l--) {
+//             if(left==right) {
+//                 break;
+//             }
+//             s_mat[a++]=mat[l][left];
+//         }
+//         top++;
+//         right--;   
+//         bottom--;
+//         left++;
+//     }
+//     for( int i=0;i<row*col;i++) {
+//         printf("%d ",s_mat[i]);
+//     }
+// }
 
-        if(a==row*col) {
-            break;
-        }
-    }
-    for( int i=0;i<row*col;i++) {
-        printf("%d ",s_mat[i]);
-    }
-}
+
+
+// 132
+// Given a boolean matrix mat where each cell contains either 0 or 1, the task is to modify 
+// it such that if a matrix cell matrix[i][j] is 1 then all the cells in its ith row and jth column will become 1.
+
+// int main() {
+//     int row,col;
+//     printf("Enter rows and column:");
+//     scanf("%d %d",&row,&col);
+
+//     int mat[row][col];
+//     for(int i=0;i<row;i++) {
+//         for(int j=0;j<col;j++) {
+//             scanf("%d",&mat[i][j]);
+//         }
+//     }
+    
+//     int rows_to_mark[row];
+//     int cols_to_mark[col];
+    
+//     for(int i=0;i<row;i++) {
+//         rows_to_mark[i] = 0;
+//     }
+//     for(int j=0;j<col;j++) {
+//         cols_to_mark[j] = 0;
+//     }
+
+//     for(int i=0;i<row;i++) {
+//         for(int j=0;j<col;j++) {
+//             if (mat[i][j]==1) {
+//                 rows_to_mark[i] = 1;
+//                 cols_to_mark[j] = 1;
+//             }
+//         }
+//     }
+
+//     for(int i=0;i<row;i++) {
+//         for(int j=0;j<col;j++) {
+//             if (rows_to_mark[i]==1 || cols_to_mark[j]==1) {
+//                 mat[i][j] = 1;
+//             }
+//         }
+//     }
+
+//     for(int i=0;i<row;i++) {
+//         for(int j=0;j<col;j++) {
+//             printf("%d ",mat[i][j]);
+//         }
+//         printf("\n");
+//     }
+    
+//     return 0;
+// }
+
+
+// 133
+// Transpose of a matrix
+
+// int main() {
+//     int row,col;
+//     printf("Enter rows and column:");
+//     scanf("%d %d",&row,&col);
+
+//     int mat[row][col];
+//     for(int i=0;i<row;i++) {
+//         for(int j=0;j<col;j++) {
+//             scanf("%d",&mat[i][j]);
+//         }
+//     }
+//     int t_mat[row][col];
+
+//         for(int i=0;i<row;i++) {
+//             for(int j=0;j<col;j++) {
+//                 t_mat[i][j]=mat[j][i];
+//             }
+//     }
+
+//         for(int i=0;i<row;i++) {
+//             for(int j=0;j<col;j++) {
+//                 printf("%d ",t_mat[i][j]);
+//             }
+//         printf("\n");
+//     }
+// return 0;
+// }
+
+// 134
+// 
