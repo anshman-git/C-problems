@@ -3337,4 +3337,33 @@
 // }
 
 // 134
-// 
+// Determinant of matrix
+// int fun(int arr[][2],int srow,int scol);
+
+// int main() {
+//     int row,col;
+//     printf("Enter rows and column:");
+//     scanf("%d %d",&row,&col);
+    
+//     int mat[row][col];
+//     for(int i=0;i<row;i++) {
+//         for(int j=0;j<col;j++) {
+//             scanf("%d",&mat[i][j]);
+//         }
+//     }
+
+//     int det;
+//     for(int i=0;i<row;i++) {
+//         for(int j=0;j<col;j++) {
+//             // fun(mat,1,1);
+//         }
+//     }
+//     // det=fun(mat,2,2);
+    
+//     printf("%d ",det);
+//     return 0;
+    
+// }
+// int fun(int arr[][2],int srow,int scol) {
+//     return arr[srow][scol]*arr[srow+1][scol+1]-arr[srow+1][scol]*arr[srow][scol+1];
+// }
