@@ -3439,23 +3439,43 @@
 // endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a
 // container, such that the container contains the most water. Return the maximum amount of water a container can store.
 
-int maxWater(int arr[], int n) {
-    int res = 0;
-    for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
+// int maxWater(int arr[], int n) {
+//     int res = 0;
+//     for (int i = 0; i < n; i++) {
+//         for (int j = i + 1; j < n; j++) {
           
-            int amount = 
-                (arr[i] < arr[j] ? arr[i] : arr[j]) * (j - i);
+//             int amount = 
+//                 (arr[i] < arr[j] ? arr[i] : arr[j]) * (j - i);
           
-            res = (amount > res ? amount : res);
+//             res = (amount > res ? amount : res);
+//         }
+//     }
+//     return res;
+// }
+
+// int main() {
+//     int arr[] = {2, 1, 8, 6, 4, 6, 5, 5};
+//     int n = sizeof(arr) / sizeof(arr[0]);
+//     printf("%d", maxWater(arr, n));
+//     return 0;
+// }
+
+
+// 137
+// Given a string s1 and a string s2, write a function to check whether s2 is a rotation of s1.
+void check_rot(char str[],char str2[]) {
+    int l1=strlen(str);
+    int l2=strlen(str2);
+
+    for (int i=0;i<l1;i++) {
+        for(int j=0;j<l2;j++) {
+
         }
     }
-    return res;
 }
 
 int main() {
-    int arr[] = {2, 1, 8, 6, 4, 6, 5, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    printf("%d", maxWater(arr, n));
-    return 0;
+    char str[100];
+    char str2[100];
+    // fgets()
 }
