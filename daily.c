@@ -3463,19 +3463,60 @@
 
 // 137
 // Given a string s1 and a string s2, write a function to check whether s2 is a rotation of s1.
-void check_rot(char str[],char str2[]) {
-    int l1=strlen(str);
-    int l2=strlen(str2);
+// void check_rot(char str[],char str2[]) {
+//     int l1=strlen(str);
+//     int l2=strlen(str2);
 
-    for (int i=0;i<l1;i++) {
-        for(int j=0;j<l2;j++) {
+//     for (int i=0;i<l1;i++) {
+//         for(int j=0;j<l2;j++) {
+
+//         }
+//     }
+// }
+
+// int main() {
+//     char str[100];
+//     char str2[100];
+    
+// }
+
+// 138
+// Given an array arr[] of n integers where arr[i] represents the number of chocolates in ith packet. Each packet can have a variable number of chocolates. There are m students, the task is to distribute chocolate packets such that: 
+// Each student gets exactly one packet.
+// The difference between the maximum and minimum number of chocolates in the packets given to the students is minimized.
+
+void sort(int arr[],int n);
+int main () {
+    int n;
+    printf("Enter size of the array:");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter the array:");
+    for(int i=0;i<n;i++) {
+    scanf("%d",&arr[i]);
+    }
+    sort(arr,n);
+    int m;
+    printf("enter number of student:");
+    scanf("%d",&m);
+
+    int min;
+    for(int i=0;i<n;i++) {
+        if(arr[i+m-2]-arr[i]<min) {
 
         }
     }
-}
 
-int main() {
-    char str[100];
-    char str2[100];
-    // fgets()
+}
+void sort(int arr[],int n) {
+    int key;
+    for(int i=0;i<n;i++) {
+        key=arr[i];
+        int j=i-1;
+        while(j>=0 && arr[j]>key) {
+            arr[j+1]=arr[j];
+            j=j-1;
+        }
+        arr[j+1]=key;
+    }
 }
