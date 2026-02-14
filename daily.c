@@ -3485,38 +3485,54 @@
 // Each student gets exactly one packet.
 // The difference between the maximum and minimum number of chocolates in the packets given to the students is minimized.
 
-void sort(int arr[],int n);
-int main () {
-    int n;
-    printf("Enter size of the array:");
-    scanf("%d",&n);
-    int arr[n];
-    printf("Enter the array:");
-    for(int i=0;i<n;i++) {
-    scanf("%d",&arr[i]);
-    }
-    sort(arr,n);
-    int m;
-    printf("enter number of student:");
-    scanf("%d",&m);
+// void sort(int arr[],int n);
+// int main () {
+//     int n;
 
-    int min;
-    for(int i=0;i<n;i++) {
-        if(arr[i+m-2]-arr[i]<min) {
+//     printf("Enter size of the array:");
+//     scanf("%d",&n);
 
-        }
-    }
+//     int arr[n];
+//     printf("Enter the array:");
+//     for(int i=0;i<n;i++) {
+//         scanf("%d",&arr[i]);
+//     }
+//     sort(arr,n);
 
-}
-void sort(int arr[],int n) {
-    int key;
-    for(int i=0;i<n;i++) {
-        key=arr[i];
-        int j=i-1;
-        while(j>=0 && arr[j]>key) {
-            arr[j+1]=arr[j];
-            j=j-1;
-        }
-        arr[j+1]=key;
-    }
-}
+//     int m;
+//     printf("enter number of student:");
+//     scanf("%d",&m);
+
+//     int min=999,note;
+//     for(int i=0;i<=n-m;i++) {
+        
+//         if(arr[i+m-1]-arr[i]<min) {
+//             min=arr[i+m-1]-arr[i];
+//             note=i;
+//         }
+        
+//     }
+//     int final_arr[m];
+//     for(int i=0;i<m;i++) {
+//         final_arr[i]=arr[note++];
+//     }
+//     printf("Final array:");
+//     for(int i=0;i<m;i++) {
+//         printf("%d ",final_arr[i]);
+//     }
+//     printf("\n Min diff=%d",min);
+//     return 0;
+
+// }
+// void sort(int arr[],int n) {
+//     int key;
+//     for(int i=0;i<n;i++) {
+//         key=arr[i];
+//         int j=i-1;
+//         while(j>=0 && arr[j]>key) {
+//             arr[j+1]=arr[j];
+//             j=j-1;
+//         }
+//         arr[j+1]=key;
+//     }
+// }
