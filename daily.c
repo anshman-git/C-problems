@@ -3463,22 +3463,54 @@
 
 // 137
 // Given a string s1 and a string s2, write a function to check whether s2 is a rotation of s1.
-// void check_rot(char str[],char str2[]) {
-//     int l1=strlen(str);
-//     int l2=strlen(str2);
-
-//     for (int i=0;i<l1;i++) {
-//         for(int j=0;j<l2;j++) {
-
-//         }
+// int isRotation(char *s1, char *s2) {
+//     int len1 = 0, len2 = 0;
+//     while (s1[len1] != '\0') len1++;
+//     while (s2[len2] != '\0') len2++;
+//     
+//     if (len1 != len2) return 0;
+//     
+//     char temp[len1 * 2 + 1];
+//     for (int i = 0; i < len1; i++) {
+//         temp[i] = s1[i];
 //     }
+//     for (int i = len1; i < len1 * 2; i++) {
+//         temp[i] = s1[i - len1];
+//     }
+//     temp[len1 * 2] = '\0';
+//     
+//     char *ptr = temp;
+//     while (*ptr != '\0') {
+//         int match = 1;
+//         char *p1 = ptr;
+//         char *p2 = s2;
+//         while (*p2 != '\0') {
+//             if (*p1 != *p2) {
+//                 match = 0;
+//                 break;
+//             }
+//             p1++;
+//             p2++;
+//         }
+//         if (match) return 1;
+//         ptr++;
+//     }
+//     return 0;
+// }
+// int main() {
+//     char s1[100], s2[100];
+//     printf("Enter first string: ");
+//     scanf("%s", s1);
+//     printf("Enter second string: ");
+//     scanf("%s", s2);
+//     
+//     if (isRotation(s1, s2))
+//         printf("Yes, %s is a rotation of %s\n", s2, s1);
+//     else
+//         printf("No, %s is not a rotation of %s\n", s2, s1);
+//     return 0;
 // }
 
-// int main() {
-//     char str[100];
-//     char str2[100];
-    
-// }
 
 // 138
 // Given an array arr[] of n integers where arr[i] represents the number of chocolates in ith packet. Each packet can have a variable number of chocolates. There are m students, the task is to distribute chocolate packets such that: 
@@ -3536,3 +3568,7 @@
 //         arr[j+1]=key;
 //     }
 // }
+
+
+// 139
+// 
