@@ -3571,4 +3571,12 @@
 
 
 // 139
+// Allocate Minimum Pages
+// Given an array arr[], where arr[i] represents the number of pages in the i-th book, 
+// and an integer k denoting the total number of students, allocate all books to the students such that:
+// Each student gets at least one book.
+// Books are allocated in a contiguous sequence.
+// The maximum number of pages assigned to any student is minimized.
+// If it is not possible to allocate all books among k students under these conditions, return -1.
+
 // 
