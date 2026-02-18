@@ -3579,4 +3579,60 @@
 // The maximum number of pages assigned to any student is minimized.
 // If it is not possible to allocate all books among k students under these conditions, return -1.
 
-// 
+void insertion_sort(int arr[],int n);
+int find(int arr[],int n,int m);
+void check(int arr[],int n,int m,int i);
+
+int main() {
+    int n;
+    printf("Enter number of books:");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++) {
+        scanf("%d",&arr[i]);
+    } 
+    insertion_sort(arr,n);
+    int m;
+    printf("Enter number of students:");
+    scanf("%d",&m);
+
+    find(arr,n,m);
+    return 0;
+}
+
+void insertion_sort(int arr[],int n) {
+    int key;
+    for(int i=0;i<n;i++) {
+        key=arr[i];
+        int j=i-1;
+        while(j>=0 && arr[j]>key) {
+            arr[j+1]=arr[j];
+            j=j-1;
+        }
+        arr[j+1]=key;
+    }
+}
+int find(int arr[],int n,int m) {
+    if(m>n) {
+        return -1;
+    }
+    int min=arr[0];
+    int max=0;
+
+    for(int i=0;i<n;i++) {
+        if(arr[i]>min) {
+         min=arr[i];   
+        }
+        max+=arr[i];
+    }
+
+    for(int i=0;i<n;i++) {
+        if(check(arr,n,m,i)) {
+            return i;
+        }
+    }
+    return -1;
+}
+void check(int arr[],int n,int m,int i) {
+    // soon
+}
