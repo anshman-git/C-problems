@@ -4,6 +4,8 @@
 #include<stdlib.h>
 
 
+//what just happened to my laptop 
+
 // DAY 1
 // 1
 // print "Hello world"
