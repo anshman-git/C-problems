@@ -2,6 +2,7 @@
 #include<math.h>
 #include<string.h>
 #include<stdlib.h>
+#include<stdbool.h>
 
 
 //what just happened to my laptop 
@@ -3581,60 +3582,96 @@
 // The maximum number of pages assigned to any student is minimized.
 // If it is not possible to allocate all books among k students under these conditions, return -1.
 
-void insertion_sort(int arr[],int n);
-int find(int arr[],int n,int m);
-void check(int arr[],int n,int m,int i);
+void insertion_sort(int arr[], int n);
+int find(int arr[], int n, int m);
+bool check(int arr[], int n, int m, int i);
 
-int main() {
+int main()
+{
     int n;
     printf("Enter number of books:");
-    scanf("%d",&n);
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++) {
-        scanf("%d",&arr[i]);
-    } 
-    insertion_sort(arr,n);
+
+    printf("Enter number of pages in each books:");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    insertion_sort(arr, n);
     int m;
     printf("Enter number of students:");
-    scanf("%d",&m);
+    scanf("%d", &m);
 
-    find(arr,n,m);
+    printf("%d\n", find(arr, n, m));
     return 0;
 }
 
-void insertion_sort(int arr[],int n) {
+void insertion_sort(int arr[], int n)
+{
     int key;
-    for(int i=0;i<n;i++) {
-        key=arr[i];
-        int j=i-1;
-        while(j>=0 && arr[j]>key) {
-            arr[j+1]=arr[j];
-            j=j-1;
+    for (int i = 0; i < n; i++)
+    {
+        key = arr[i];
+        int j = i - 1;
+        while (j >= 0 && arr[j] > key)
+        {
+            arr[j + 1] = arr[j];
+            j = j - 1;
         }
-        arr[j+1]=key;
+        arr[j + 1] = key;
     }
 }
-int find(int arr[],int n,int m) {
-    if(m>n) {
+
+bool check(int arr[], int n, int m, int maxPages)
+{
+    int students = 1;
+    int pages = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] > maxPages)
+            return false;
+
+        if (pages + arr[i] > maxPages)
+        {
+            students++;
+            pages = arr[i];
+        }
+        else
+        {
+            pages += arr[i];
+        }
+    }
+    return students <= m;
+}
+
+int find(int arr[], int n, int m)
+{
+    if (m > n)
         return -1;
-    }
-    int min=arr[0];
-    int max=0;
 
-    for(int i=0;i<n;i++) {
-        if(arr[i]>min) {
-         min=arr[i];   
-        }
-        max+=arr[i];
+    int low = arr[0], high = 0;
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] > low)
+            low = arr[i];
+        high += arr[i];
     }
 
-    for(int i=0;i<n;i++) {
-        if(check(arr,n,m,i)) {
-            return i;
+    int ans = -1;
+    while (low <= high)
+    {
+        int mid = low + (high - low) / 2;
+        if (check(arr, n, m, mid))
+        {
+            ans = mid;
+            high = mid - 1;
+        }
+        else
+        {
+            low = mid + 1;
         }
     }
-    return -1;
-}
-void check(int arr[],int n,int m,int i) {
-    // soon
+    return ans;
 }
