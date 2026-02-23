@@ -3678,3 +3678,26 @@
 
 
 // 140
+// find the leader {g4g} 
+// int* leaders(int* arr, int n, int* returnSize) {
+//     int* result = (int*)malloc(n * sizeof(int));
+//     int count = 0;
+
+//     int maxFromRight = arr[n - 1];
+//     result[count++] = maxFromRight;
+
+//     for (int i = n - 2; i >= 0; i--) {
+//         if (arr[i] >= maxFromRight) {
+//             maxFromRight = arr[i];
+//             result[count++] = arr[i];
+//         }
+//     }
+//     for (int i = 0; i < count / 2; i++) {
+//         int temp = result[i];
+//         result[i] = result[count - 1 - i];
+//         result[count - 1 - i] = temp;
+//     }
+
+//     *returnSize = count;
+//     return result;
+// }
