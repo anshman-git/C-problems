@@ -3701,3 +3701,30 @@
 //     *returnSize = count;
 //     return result;
 // }
+
+// 141
+// Given a string s, composed of different combinations of '(' , ')', '{', '}', '[', ']'. Determine whether the Expression is balanced or not.
+// An expression is balanced if:
+//       -Each opening bracket has a corresponding closing bracket of the same type.
+//       -Opening brackets must be closed in the correct order.
+
+// int isBalanced(char *s) {
+//     char stack[1000];
+//     int top = -1;
+
+//     for (int i = 0; s[i] != '\0'; i++) {
+//         if (s[i] == '(' || s[i] == '{' || s[i] == '[') {
+//             stack[++top] = s[i];
+//         } 
+//         else if (s[i] == ')' || s[i] == '}' || s[i] == ']') {
+//             if (top == -1) return 0;
+
+//             char last = stack[top--];
+
+//             if ((s[i] == ')' && last != '(') || (s[i] == '}' && last != '{') || (s[i] == ']' && last != '[')) {
+//                 return 0;
+//             }
+//         }
+//     }
+//     return (top == -1);
+// }
