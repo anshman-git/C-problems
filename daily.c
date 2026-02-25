@@ -3728,3 +3728,23 @@
 //     }
 //     return (top == -1);
 // }
+
+
+// 142
+// You are given a string s. Your task is to determine if the string is a palindrome.
+// A string is considered a palindrome if it reads the same forwards and backwards.
+
+// User function template for C
+// bool isPalindrome(char s[]) {
+    // code here
+//     int i=0;
+//     int j=strlen(s)-1;
+//     while(i<=j) {
+//         if(s[i]!=s[j]) {
+//             return 0;
+//         }
+//         i++;
+//         j--;
+//     }
+//     return 1;
+// }
