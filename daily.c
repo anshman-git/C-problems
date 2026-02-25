@@ -3748,3 +3748,28 @@
 //     }
 //     return 1;
 // }
+
+// 143
+// Given two non-empty strings s1 and s2, consisting only of lowercase English letters, determine whether they are anagrams of each other or not.
+// Two strings are considered anagrams if they contain the same characters with exactly the same frequencies, regardless of their order.
+// bool areAnagrams(char *s1, char *s2) {
+//     int len1 = strlen(s1);
+//     int len2 = strlen(s2);
+
+//     if (len1 != len2)
+//         return false;
+
+//     int freq[26] = {0};
+
+//     for (int i = 0; i < len1; i++) {
+//         freq[s1[i] - 'a']++;
+//         freq[s2[i] - 'a']--;
+//     }
+
+//     for (int i = 0; i < 26; i++) {
+//         if (freq[i] != 0)
+//             return false;
+//     }
+
+//     return true;
+// }
