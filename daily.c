@@ -3773,3 +3773,31 @@
 
 //     return true;
 // }
+
+// 144
+// Given an array of positive integers arr[], return the second largest element from the array. 
+// If the second largest element doesn't exist then return -1.
+// Note: The second largest element should not be equal to the largest element. {g4g}
+
+// int getSecondLargest(int *arr, int n) {
+//     if (n < 2)
+//         return -1;
+
+//     int largest = INT_MIN;
+//     int secondLargest = INT_MIN;
+
+//     for (int i = 0; i < n; i++) {
+//         if (arr[i] > largest) {
+//             secondLargest = largest;
+//             largest = arr[i];
+//         } 
+//         else if (arr[i] < largest && arr[i] > secondLargest) {
+//             secondLargest = arr[i];
+//         }
+//     }
+
+//     if (secondLargest == INT_MIN)
+//         return -1;
+
+//     return secondLargest;
+// }
