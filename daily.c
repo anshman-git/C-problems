@@ -3801,3 +3801,58 @@
 
 //     return secondLargest;
 // }
+
+//145
+// reverse the string {g4g}.
+// void remove_dots(char s1[],int size);
+// void reverse(char s1[],char s2[],int size);
+// int main() {
+//     char s1[100];
+//     printf("Enter your string along with . and no spaces:");
+//     scanf("%s",s1);
+//     remove_dots(s1,strlen(s1));
+//     puts(s1);
+//     char s2[strlen(s1)];
+//     reverse(s1,s2,strlen(s1));
+//     puts(s2);
+
+//     return 0;
+// }
+
+// void remove_dots(char s1[],int size) {
+//     for(int i=0;i<size-1;i++) {
+//         if(s1[i]=='.') {
+//             if(s1[i+1]=='.') {
+//                 for(int j=i;j<size-1;j++) {
+//                     s1[j]=s1[j+1];
+//                 }
+//                 size--;
+//                 i--;
+//             }
+//         }
+//     }
+//     s1[size]='\0';
+// }
+
+// void reverse(char s1[],char s2[],int size) {
+
+//     int i = size - 1;
+//     int k = 0;
+//     int start=0,end=0;
+
+//     while (i >= 0) {
+//         end = i;
+//         while (i >= 0 && s1[i] != '.')
+//             i--;
+//         start = i + 1;
+//         for (int j = start; j <= end; j++) {
+//             s2[k++] = s1[j];
+//         }
+//         if (i > 0){
+//             s2[k++] = '.';
+//         }
+//         i--;
+//     }
+
+//     s2[k] = '\0';
+// }
