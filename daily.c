@@ -3887,4 +3887,19 @@
 // } 
 
 // 148
-// 
+// Given a string s consisting of lowercase English Letters. return the first non-repeating character in s. If there is no non-repeating character, return '$'.
+// char nonRepeatingChar(char *s) {
+//     int len= strlen(s),cou=0;
+//     char key;
+//     char only;
+//     only='$';
+//     for(int i=0;i<len;i++) {
+//         key=s[i];
+//         for(int j=0;j<len;j++) {
+//             if(s[j]==key) cou++;
+//         }
+//         if(cou==0) return key;
+//         cou=0;
+//     }
+//     return only;
+// }   
