@@ -3903,3 +3903,14 @@
 //     }
 //     return only;
 // }   
+
+// 149
+// Length of the last word (leetcode 58)
+// int lengthOfLastWord(char* s) {
+//     int cou=0,len=strlen(s);
+//     for(int i=len-1;i>=0;i--) {
+//         if(s[i]!=' ') cou++;
+//         else if(cou>0 && s[i]==' ') return cou;
+//     }
+//     return cou;
+// }
