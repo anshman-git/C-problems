@@ -3914,3 +3914,19 @@
 //     }
 //     return cou;
 // }
+
+// 150
+// First Repeating Element
+// int firstRepeated(int arr[], int n) {
+    
+//     int cou=0;
+//     for(int i=0;i<n;i++) {
+//         cou=0;
+//         for(int j=0;j<n;j++) {
+//             if(arr[j]==arr[i]) cou++;
+//         }
+     
+//         if(cou>1) return i+1;
+//     }
+//     return -1;
+// }
