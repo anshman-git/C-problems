@@ -3930,3 +3930,28 @@
 //     }
 //     return -1;
 // }
+
+// 151
+// Find the integer added to arry i (leetcode 3131) 
+// void swap(int *a, int *b) {
+//     int temp = *a;
+//     *a = *b;
+//     *b = temp;
+// }
+
+// void sort(int arr[], int n) {
+//     for (int i = 0; i < n - 1; i++) {
+//         for (int j = 0; j < n - i - 1; j++) {
+//             if (arr[j] > arr[j + 1]) {
+//                 swap(&arr[j], &arr[j + 1]);
+//             }
+//         }
+//     }
+// }
+// int addedInteger(int* nums1, int nums1Size, int* nums2, int nums2Size) {
+//     int x;
+//     sort(nums1,nums1Size);
+//     sort(nums2,nums2Size);
+//     x=nums2[0]-nums1[0];
+//     return x;
+// }
