@@ -3955,3 +3955,18 @@
 //     x=nums2[0]-nums1[0];
 //     return x;
 // }
+
+// 152
+// Maximum Number of Words Found in Sentences (leetcode 2114) 
+// int mostWordsFound(char** sentences, int sentencesSize) {
+//     int count1=0,count2,maxcount;
+//     for(int i=0;i<sentencesSize;i++) {
+//         count2=count1;
+//         count1=0;
+//         for(int j=0;j<strlen(sentences[i]);j++) {
+//             if(sentences[i][j]==' ') count1++;
+//         }
+//         if(count1>count2) maxcount=count1;   
+//     }
+//     return maxcount+1;
+// }
