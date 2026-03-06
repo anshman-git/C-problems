@@ -3959,14 +3959,19 @@
 // 152
 // Maximum Number of Words Found in Sentences (leetcode 2114) 
 // int mostWordsFound(char** sentences, int sentencesSize) {
-//     int count1=0,count2,maxcount;
-//     for(int i=0;i<sentencesSize;i++) {
-//         count2=count1;
-//         count1=0;
-//         for(int j=0;j<strlen(sentences[i]);j++) {
-//             if(sentences[i][j]==' ') count1++;
+//     int maxcount = 0;
+//     for(int i = 0; i < sentencesSize; i++) {
+//         int count = 1;  
+//         int len = strlen(sentences[i]);
+
+//         for(int j = 0; j < len; j++) {
+//             if(sentences[i][j] == ' ')
+//                 count++;
 //         }
-//         if(count1>count2) maxcount=count1;   
+
+//         if(count > maxcount)
+//             maxcount = count;
 //     }
-//     return maxcount+1;
+
+//     return maxcount;
 // }
