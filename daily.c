@@ -4018,3 +4018,6 @@
 
 //     return k + 1;
 // }
+
+// 156
+// valid Soduku (leetcode 36)
