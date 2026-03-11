@@ -4021,3 +4021,30 @@
 
 // 156
 // valid Soduku (leetcode 36)
+
+
+// 157
+// Panagram checking {g4g} 
+// #include<stdbool.h>
+// int checkPangram(char* s) {
+//     // code here
+//     bool mark[26];
+//     for(int i=0;i<26;i++) {
+//         mark[i]=false;
+    
+//         int index;
+    
+//         int size = strlen(s);
+//         for(int i=0;i<size;i++) {
+//             if('A'<=s[i] && s[i]<='Z') index=s[i]-'A';
+//             else if('a'<=s[i] && s[i]<='z') index=s[i]-'a';
+//             mark[index]=true;
+//         }
+        
+//         for(int i=0;i<26;i++) {
+//             if(mark[i]==false) return false;
+//         }
+//     }
+//         return true;
+
+// }
