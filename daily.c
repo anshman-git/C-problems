@@ -3,9 +3,8 @@
 #include<string.h>
 #include<stdlib.h>
 #include<stdbool.h>
+#include<ctype.h>
 
-
-//what just happened to my laptop 
 
 // DAY 1
 // 1
@@ -4073,4 +4072,17 @@
 //     }
 //         return true;
 
+// }
+
+// 158
+// Number of changing key (leetcode 3019) 
+// #include<ctype.h>
+// int countKeyChanges(char* s) {
+//     int count=0;
+//     for(int i=0;i<strlen(s)-1;i++) {
+//         if(tolower(s[i])!=tolower(s[i+1])) {
+//             count++;
+//         }
+//     }
+//     return count;
 // }
