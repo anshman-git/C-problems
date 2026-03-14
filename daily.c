@@ -4086,3 +4086,26 @@
 //     }
 //     return count;
 // }
+
+// 159
+// Find words containing characters (leetcode 2942)
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+// int* findWordsContaining(char** words, int wordsSize, char x, int* returnSize) {
+//     int *arr;
+//     int a=0,l;
+//     arr = (int*) malloc(wordsSize * sizeof(int));
+//     for(int i=0;i<wordsSize;i++) {
+//         l=strlen(words[i]);
+//         for(int j=0;j<l;j++) {
+//             if(words[i][j]==x) {
+//                 arr[a++]=i;
+//                 break;
+//             }
+//         }
+//     }
+//     *returnSize=a;
+//     return arr;
+
+// }
