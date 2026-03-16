@@ -4112,3 +4112,28 @@
 
 // 160
 // 977. Squares of a Sorted Array
+int* sortedSquares(int* nums, int numsSize, int* returnSize) {
+    
+    int* res = (int*)malloc(numsSize * sizeof(int));
+    
+    int left = 0;
+    int right = numsSize - 1;
+    int pos = numsSize - 1;
+
+    while(left <= right) {
+        
+        if(abs(nums[left]) > abs(nums[right])) {
+            res[pos] = nums[left] * nums[left];
+            left++;
+        }
+        else {
+            res[pos] = nums[right] * nums[right];
+            right--;
+        }
+        
+        pos--;
+    }
+
+    *returnSize = numsSize;
+    return res;
+}
