@@ -4112,28 +4112,47 @@
 
 // 160
 // 977. Squares of a Sorted Array
-int* sortedSquares(int* nums, int numsSize, int* returnSize) {
+// int* sortedSquares(int* nums, int numsSize, int* returnSize) {
     
-    int* res = (int*)malloc(numsSize * sizeof(int));
+//     int* res = (int*)malloc(numsSize * sizeof(int));
     
-    int left = 0;
-    int right = numsSize - 1;
-    int pos = numsSize - 1;
+//     int left = 0;
+//     int right = numsSize - 1;
+//     int pos = numsSize - 1;
 
-    while(left <= right) {
+//     while(left <= right) {
         
-        if(abs(nums[left]) > abs(nums[right])) {
-            res[pos] = nums[left] * nums[left];
-            left++;
-        }
-        else {
-            res[pos] = nums[right] * nums[right];
-            right--;
-        }
+//         if(abs(nums[left]) > abs(nums[right])) {
+//             res[pos] = nums[left] * nums[left];
+//             left++;
+//         }
+//         else {
+//             res[pos] = nums[right] * nums[right];
+//             right--;
+//         }
         
-        pos--;
-    }
+//         pos--;
+//     }
 
-    *returnSize = numsSize;
-    return res;
-}
+//     *returnSize = numsSize;
+//     return res;
+// }
+
+// 161
+// Leetcode 1822. Sign of the Product of an Array
+// int signFunc(int x) {
+//     if(x == 0) return 0;
+//     else if(x < 0) return -1;
+//     else return 1;
+// }
+
+// int arraySign(int* nums, int numsSize) {
+//     int prod = 1;
+
+//     for(int i = 0; i < numsSize; i++) {
+//         if(nums[i] == 0) return signFunc(0);
+//         if(nums[i] < 0) prod = -prod;
+//     }
+
+//     return signFunc(prod);
+// }
