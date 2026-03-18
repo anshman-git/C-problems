@@ -4156,3 +4156,23 @@
 
 //     return signFunc(prod);
 // }
+
+// 162
+// Richest costomer wealth (leetcode 1672)
+// int maximumWealth(int** accounts, int accountsSize, int* accountsColSize) {
+//     int max_sum = 0, max_final = 0;
+
+//     for(int i = 0; i < accountsSize; i++) {
+//         max_sum = 0;
+
+//         for(int j = 0; j < accountsColSize[i]; j++) {
+//             max_sum += accounts[i][j];
+//         }
+
+//         if(max_final < max_sum) {
+//             max_final = max_sum;
+//         }
+//     }
+
+//     return max_final;
+// }
