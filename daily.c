@@ -4176,3 +4176,27 @@
 
 //     return max_final;
 // }
+
+// 163
+// Removing Duplicate (gfg) 
+// char* removeDups(char* s) {
+//     int j = 0;
+
+//     for(int i = 0; s[i] != '\0'; i++) {
+//         int found = 0;
+
+//         for(int k = 0; k < j; k++) {
+//             if(s[i] == s[k]) {
+//                 found = 1;
+//                 break;
+//             }
+//         }
+
+//         if(!found) {
+//             s[j++] = s[i];
+//         }
+//     }
+
+//     s[j] = '\0';
+//     return s;
+// }
