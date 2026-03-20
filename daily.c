@@ -4200,3 +4200,27 @@
 //     s[j] = '\0';
 //     return s;
 // }
+
+// 164
+// Print matrix in snake form 
+int* snakePattern(int n, int matrix[n][n]) {
+    // code here
+    int *arr=(int*)malloc((n*n)*sizeof(int));
+    int a=0;
+    for(int i=0;i<n;i++) {
+        if(i%2==0) {
+            for(int j=0;j<n;j++) {
+                arr[a]=matrix[i][j];
+                a++;
+            }
+        }
+        else {
+            for(int j=n-1;j>=0;j--) {
+                arr[a]=matrix[i][j];
+                a++;
+            }
+        }
+    }
+    
+    return arr
+}
