@@ -4203,24 +4203,45 @@
 
 // 164
 // Print matrix in snake form 
-int* snakePattern(int n, int matrix[n][n]) {
-    // code here
-    int *arr=(int*)malloc((n*n)*sizeof(int));
-    int a=0;
-    for(int i=0;i<n;i++) {
-        if(i%2==0) {
-            for(int j=0;j<n;j++) {
-                arr[a]=matrix[i][j];
-                a++;
-            }
-        }
-        else {
-            for(int j=n-1;j>=0;j--) {
-                arr[a]=matrix[i][j];
-                a++;
-            }
-        }
-    }
+// int* snakePattern(int n, int matrix[n][n]) {
+//     // code here
+//     int *arr=(int*)malloc((n*n)*sizeof(int));
+//     int a=0;
+//     for(int i=0;i<n;i++) {
+//         if(i%2==0) {
+//             for(int j=0;j<n;j++) {
+//                 arr[a]=matrix[i][j];
+//                 a++;
+//             }
+//         }
+//         else {
+//             for(int j=n-1;j>=0;j--) {
+//                 arr[a]=matrix[i][j];
+//                 a++;
+//             }
+//         }
+//     }
     
-    return arr
+//     return arr
+// }
+
+
+// 165
+// Count number of hoops (g4g)
+int countWays(int n) {
+   
+    if (n == 0) return 1;
+    if (n == 1) return 1;
+    if (n == 2) return 2;
+
+    int a = 1, b = 1, c = 2, d;
+
+    for (int i = 3; i <= n; i++) {
+        d = a + b + c;
+        a = b;
+        b = c;
+        c = d;
+    }
+
+    return c;
 }
