@@ -4228,20 +4228,39 @@
 
 // 165
 // Count number of hoops (g4g)
-int countWays(int n) {
-   
-    if (n == 0) return 1;
-    if (n == 1) return 1;
-    if (n == 2) return 2;
+// int countWays(int n) {
+//     if (n == 0) return 1;
+//     if (n == 1) return 1;
+//     if (n == 2) return 2;
+//     int a = 1, b = 1, c = 2, d;
+//     for (int i = 3; i <= n; i++) {
+//         d = a + b + c;
+//         a = b;
+//         b = c;
+//         c = d;
+//     }
+//     return c;
+// }
 
-    int a = 1, b = 1, c = 2, d;
+// 166
+// Check is a number is Panagram (leetcode 1832)
+// void removedup(char* str) {
+//     int seen_chars[256] = {0}; 
+//     int write_index = 0;
+//     for (int i = 0; i < strlen(str); ++i) {
+//         unsigned char current_char = (unsigned char)str[i];
+//         if (seen_chars[current_char] == 0) {
+//             str[write_index++] = str[i];
+//             seen_chars[current_char] = 1;
+//         }
+//     }
+//     str[write_index] = '\0';
+// }
 
-    for (int i = 3; i <= n; i++) {
-        d = a + b + c;
-        a = b;
-        b = c;
-        c = d;
-    }
-
-    return c;
-}
+// bool checkIfPangram(char* sentence) {
+//     removedup(sentence); 
+//     int len=strlen(sentence); 
+//     if(len!=26) return false;
+//     if(len==26) return true;
+//     return false;
+// }
