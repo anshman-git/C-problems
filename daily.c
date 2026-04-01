@@ -4268,18 +4268,39 @@
 
 // 167
 // Type of Triangle (leetcode 3024) 
-char* triangleType(int* nums, int numsSize) {
-    if (!((nums[0] + nums[1] > nums[2]) && (nums[0] + nums[2] > nums[1]) && (nums[1] + nums[2] > nums[0]))) {
-        return "none";
-    }
+// char* triangleType(int* nums, int numsSize) {
+//     if (!((nums[0] + nums[1] > nums[2]) && (nums[0] + nums[2] > nums[1]) && (nums[1] + nums[2] > nums[0]))) {
+//         return "none";
+//     }
 
-    if (nums[0] == nums[1] && nums[1] == nums[2]) {
-        return "equilateral";
-    } 
+//     if (nums[0] == nums[1] && nums[1] == nums[2]) {
+//         return "equilateral";
+//     } 
     
-    if (nums[0] == nums[1] || nums[0] == nums[2] || nums[1] == nums[2]) {
-        return "isosceles";
-    }
+//     if (nums[0] == nums[1] || nums[0] == nums[2] || nums[1] == nums[2]) {
+//         return "isosceles";
+//     }
 
-    return "scalene";
-}
+//     return "scalene";
+// }
+
+// 165
+// Search insert position(leetcode 35)
+// int searchInsert(int* nums, int numsSize, int target) {
+//     int low = 0;
+//     int high = numsSize - 1;
+
+//     while (low <= high) {
+//         int mid = low + (high - low) / 2;
+
+//         if (nums[mid] == target) {
+//             return mid;
+//         } else if (nums[mid] < target) {
+//             low = mid + 1;
+//         } else {
+//             high = mid - 1;
+//         }
+//     }
+
+//     return low;
+// }
