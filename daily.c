@@ -4306,3 +4306,26 @@
 // }
 
 // 166
+// Single NUmber I(leetcode )
+// int singleNumber(int* nums, int numsSize) {
+//     int a=0;
+//     for(int i=0;i<numsSize;i++) {
+//         a^=nums[i];
+//     }
+//     return a;
+// }
+
+// 167
+// Single number II (leetcode 136)
+// int singleNumber(int* nums, int numsSize) {
+//     int a=0,b=0;
+
+//     for (int i = 0; i < numsSize; i++) {
+//         b |= (a & nums[i]);
+//         a ^= nums[i];
+//         int c=a&b;
+//         a &= ~c;
+//         b &= ~c;
+//     }
+//     return a;
+// }
