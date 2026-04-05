@@ -4341,3 +4341,15 @@
 
 //     return n == 1;
 // }
+
+// 169
+// Exel Sheet columnn number (leetcode 171)
+// int titleToNumber(char* ct) {
+//     int final=0;
+//     for(int i=0;ct[i]!='\0';i++) {
+//         if(i>0) final*=26; 
+//         int pos=(ct[i]-'A')+1;
+//         final+=pos;
+//     }
+//     return final;
+// }
