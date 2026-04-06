@@ -4353,3 +4353,33 @@
 //     }
 //     return final;
 // }
+
+// 170
+// Number of 1 Bit (leetcode 191)
+// int hammingWeight(int n) {
+//     int count=0;
+//     while(n!=0) {
+//         n&=(n-1);
+//         count++;
+//     }
+//     return count;
+// }
+
+// 171
+// Counting Bits (leetcode 338)
+// int* countBits(int n, int* returnSize) {
+//     int *arr;
+//     arr=(int*)malloc((n+1)*sizeof(int));
+//     for(int i=0;i<=n;i++) {
+//         int num=i;
+//         int count=0;
+//         while(num!=0) {
+//             num&=(num-1);
+//             count++;
+//         }
+//         arr[i]=count;
+//     }
+//     *returnSize=n+1;
+//     return arr;
+
+// }
