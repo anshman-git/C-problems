@@ -4383,3 +4383,15 @@
 //     return arr;
 
 // }
+
+// 172
+// Nim Game (leetcode 292)
+// bool canWinNim(int n) {
+//     if(n==0) return false;
+//     else if(n<=3) return true;
+//     else {
+//     int p=n%4;
+//     if(p==0) return false;
+//     else return true;
+//     }
+// }
