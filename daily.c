@@ -4420,3 +4420,29 @@
 //         s[i] ^= s[j] ^= s[i] ^= s[j];
 //     }
 // }
+
+// 175
+// Reverse Vowels of a String (leetcode 385)
+
+// char* reverseVowels(char* s) {
+//     char v[strlen(s)];
+//     int i=0,a=0;
+//     while(s[i]!='\0') {
+//         if(s[i]=='a' ||s[i]=='e' ||s[i]=='i' ||s[i]=='o' ||s[i]=='u' ||s[i]=='A' ||s[i]=='E' ||s[i]=='I' ||s[i]=='O' ||s[i]=='U') {
+//             v[a]=s[i];
+//             a++;
+//         }
+//         i++;
+//     }
+//     // v[a]='\0';
+//     i=0;
+//     while(s[i]!='\0') {
+//         if(s[i]=='a' ||s[i]=='e' ||s[i]=='i' ||s[i]=='o' ||s[i]=='u' ||s[i]=='A' ||s[i]=='E' ||s[i]=='I' ||s[i]=='O' ||s[i]=='U') {
+//             a--;
+//             s[i]=v[a];
+//         }
+//         i++;
+//     }
+//     return s;
+
+// }
