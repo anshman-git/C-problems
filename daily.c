@@ -4410,3 +4410,13 @@
 //     }
 //     return true;
 // }
+
+// 174
+// Reverse string (leetcode 344) 
+// void reverseString(char* s, int sSize) {
+//     int i=0;
+//     int j=sSize-1;
+//     for (i=0;i<j;i++,j--) {
+//         s[i] ^= s[j] ^= s[i] ^= s[j];
+//     }
+// }
