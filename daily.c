@@ -4468,3 +4468,14 @@
 //     }
 //     return num ^ ~mask;
 // }
+
+// Score of a string
+// int scoreOfString(char* s) {
+//     int diff = 0;
+//     int len = strlen(s);
+    
+//     for (int i = 1; i < len; i++) {
+//         diff += abs(s[i] - s[i-1]);
+//     }
+//     return diff;
+// }
