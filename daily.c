@@ -4469,6 +4469,7 @@
 //     return num ^ ~mask;
 // }
 
+// 178
 // Score of a string
 // int scoreOfString(char* s) {
 //     int diff = 0;
@@ -4478,4 +4479,20 @@
 //         diff += abs(s[i] - s[i-1]);
 //     }
 //     return diff;
+// }
+
+// 179
+//  Minimum Right Shifts to Sort the Array (leetcode 2855) 
+// int minimumRightShifts(int* nums, int numsSize) {
+//     int count=0,b=0;
+//     for(int i=1;i<numsSize;i++) {
+//         if(nums[i] < nums[i-1]) {
+//             count++;
+//             b=i;
+//         }
+//     }
+//     if(count==0) return 0;
+//     if(count>1) return -1;
+//     if(nums[0] < nums[numsSize-1]) return -1;
+//     return numsSize-b;
 // }
