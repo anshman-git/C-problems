@@ -4496,3 +4496,19 @@
 //     if(nums[0] < nums[numsSize-1]) return -1;
 //     return numsSize-b;
 // }
+
+// Longest Continuous Increasing Subsequence (Leetcodde 674)
+// int findLengthOfLCIS(int* nums, int numsSize) {
+//     int max=1,a=1;
+//     for(int i=0;i<numsSize-1;i++) {
+//         if(nums[i]<nums[i+1]) {
+//             max++;
+//         }
+//         else {
+//             if(a<max) a=max;
+//             max=1;
+//         }
+//     }
+//     if(a<max) a=max;
+//     return a;
+// }
