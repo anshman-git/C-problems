@@ -4497,6 +4497,7 @@
 //     return numsSize-b;
 // }
 
+// 180
 // Longest Continuous Increasing Subsequence (Leetcodde 674)
 // int findLengthOfLCIS(int* nums, int numsSize) {
 //     int max=1,a=1;
@@ -4512,3 +4513,26 @@
 //     if(a<max) a=max;
 //     return a;
 // }
+
+// 181
+// Find the sum of encrypted array
+// int encrypt(int n) {
+//     if(n<10) return n;
+//     else if(n==1000) return 1111; 
+//     int digit,max=0,num=n;
+//     while(num!=0) {
+//         digit=num%10;
+//         if(max<digit) max=digit;
+//         num/=10;
+//     }
+//     if(n<100) return max*11;
+//     else return max*111;
+// }
+// int sumOfEncryptedInt(int* nums, int numsSize) {
+//     int sum=0;
+//     for(int i=0;i<numsSize;i++) {
+//         sum+=encrypt(nums[i]);
+//     }
+//     return sum;
+// }
+// //6*111=6662
