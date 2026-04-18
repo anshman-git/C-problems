@@ -4559,3 +4559,18 @@
 //     }
 //     return -1;
 // }
+
+// 183
+// Climbing Stairs
+// int climbStairs(int n) {
+//     if (n <= 2) {
+//         return n;
+//     }
+//     int f=1,s=2,c;
+//     for (int i = 3; i <= n; i++) {
+//         c=f+s;
+//         f=s;
+//         s=c;
+//     }
+//     return s;
+// }
