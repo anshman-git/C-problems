@@ -4591,3 +4591,14 @@
 //     *returnSize=2*n;
 //     return ans;
 // }
+
+// 185
+// Floor in a Sorted array
+// int findFloor(int* arr, int n, int x) {
+//     int max=-9999;
+//     for(int i=0;i<n;i++) {
+//         if(arr[i]<=x && arr[i]>=arr[max]) max=i;
+//     }
+//     if(max==-9999) return -1;
+//     return max;
+// }
