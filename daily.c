@@ -4602,3 +4602,48 @@
 //     if(max==-9999) return -1;
 //     return max;
 // }
+
+// 186
+//Height check (leetcode) 
+// void swap(int* a, int* b) {
+//     int temp = *a;
+//     *a = *b;
+//     *b = temp;
+// }
+// int partition(int arr[], int low, int high) {
+//     int p = arr[low];
+//     int i = low;
+//     int j = high;
+//     while (i < j) {
+//         while (arr[i] <= p && i <= high - 1) {
+//             i++;
+//         }
+//         while (arr[j] > p && j >= low + 1) {
+//             j--;
+//         }
+//         if (i < j) {
+//             swap(&arr[i], &arr[j]);
+//         }
+//     }
+//     swap(&arr[low], &arr[j]);
+//     return j;
+// }
+// void quickSort(int arr[], int low, int high) {
+//     if (low < high) {
+//         int pi = partition(arr, low, high);
+//         quickSort(arr, low, pi - 1);
+//         quickSort(arr, pi + 1, high);
+//     }
+// }
+// int heightChecker(int* heights, int heightsSize) {
+//     int count=0;
+//     int exp[heightsSize];
+//     for(int i=0;i<heightsSize;i++) {
+//         exp[i]=heights[i];
+//     }
+//     quickSort(exp,0,heightsSize-1);
+//     for(int i=0;i<heightsSize;i++) {
+//         if(heights[i]==exp[i]) count++;
+//     }
+//     return count;
+// }
