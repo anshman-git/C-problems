@@ -4647,3 +4647,13 @@
 //     }
 //     return count;
 // }
+
+// 190
+// Height Checker (leetcode) 
+// int earliestTime(int** tasks, int tasksSize, int* tasksColSize) {
+//     int min=9999;
+//     for(int i=0;i<tasksSize;i++) {
+//         if(min>(tasks[i][0]+tasks[i][1])) min=tasks[i][0]+tasks[i][1];
+//     }
+//     return min;
+// }
