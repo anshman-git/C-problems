@@ -4657,3 +4657,25 @@
 //     }
 //     return min;
 // }
+
+// 191
+// Check if All Characters Have Equal Number of Occurrences
+// bool areOccurrencesEqual(char* s) {
+//     int freq[26]={0}; 
+//     int len=strlen(s);
+    
+//     for (int i=0;i<len;i++) {
+//         freq[s[i]-'a']++;
+//     }
+//     int target=0;
+//     for (int i=0; i<26; i++) {
+//         if (freq[i]>0) {
+//             if (target==0) {
+//                 target=freq[i];
+//             } else if (freq[i]!=target) {
+//                 return false; 
+//             }
+//         }
+//     }
+//     return true;
+// }
