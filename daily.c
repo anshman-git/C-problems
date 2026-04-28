@@ -4698,3 +4698,31 @@
 //     }
 //     return -1;
 // }
+
+// 193
+// Zigzag row (leetcode 28)
+// char* convert(char* s, int numRows) {
+//     if(numRows==1) return s;
+//     int sl=strlen(s);
+//     char rows[numRows][sl+1];
+//     for(int i=0;i<numRows;i++) {
+//         rows[i][0]='\0';
+//     }
+//     int curr=0,dir=1;
+//     for(int i=0;i<sl;i++) {
+//         int rowl=strlen(rows[curr]);
+//         rows[curr][rowl] = s[i];
+//         rows[curr][rowl+1]='\0';
+//         if(curr==0) dir=1;
+//         else if(curr==numRows-1) dir=-1;
+//         curr+=dir;
+//     }
+//     char* res=(char*)malloc((sl+1)*sizeof(char));
+
+//     res[0]='\0';
+
+//     for (int i=0;i<numRows;i++) {
+//         strcat(res,rows[i]);
+//     }
+//     return res;
+// }
