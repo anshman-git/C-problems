@@ -4726,3 +4726,19 @@
 //     }
 //     return res;
 // }
+
+// 194
+// Array Shuffle
+// /**
+//  * Note: The returned array must be malloced, assume caller calls free().
+//  */
+// int* shuffle(int* nums, int numsSize, int n, int* returnSize){
+//     int *arr,a=-2,b=-1;
+//     arr=(int *)malloc(numsSize*sizeof(int));
+//     for(int i=0;i<n;i++) {
+//         arr[a+=2]=nums[i];
+//         arr[b+=2]=nums[n+i];
+//     }
+//     *returnSize=numsSize;
+//     return arr;
+// }
