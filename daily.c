@@ -4757,3 +4757,18 @@
 //     return c;
 
 // }
+
+// 196
+// Truncate sentence(leetcode 1816)
+// char* truncateSentence(char* s, int k) {
+//     int count=0,i=0;
+//     while(s[i]!='\0') {
+//         if(s[i] ==' ') count++;
+//         if(count==k) {
+//             s[i]='\0';
+//             return s;
+//         }
+//         i++;
+//     }
+//     return s;
+// }
