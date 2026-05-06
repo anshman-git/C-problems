@@ -4790,3 +4790,29 @@
 //     }
 //     return count;
 // }
+
+// 198
+// Make The Array strictly increasing
+// bool canBeIncreasing(int* nums, int numsSize) {
+ 
+//     int violations=0;
+//     int index=-1;
+
+    
+//     for (int i=0;i<numsSize-1;i++) {
+//         if (nums[i]>=nums[i+1]) {
+//             violations++;
+//             index=i;
+//         }
+//     }
+
+    
+//     if (violations==0) return true;
+//     if (violations>1) return false;
+
+//     if (index==0 || nums[index-1] < nums[index+1]) return true;
+
+//     if (index+1==numsSize-1 || nums[index] < nums[index+2]) return true;
+
+//     return false;
+// }
