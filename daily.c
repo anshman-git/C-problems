@@ -4816,3 +4816,23 @@
 
 //     return false;
 // }
+
+// 199
+// Delete column to make sorted
+// int minDeletionSize(char** strs, int strsSize) {
+//     int count=0,rc=0;
+//     for(int i=0;i<strlen(strs[0]);i++) {
+//         count=0;
+//         for(int j=0;j<strsSize-1;j++) {
+            
+//             if(!(strs[j][i]<=strs[j+1][i])) {
+//                 count++;
+//                 break;
+//             }
+
+//         }
+//         if(count!=0) rc++;
+        
+//     }
+//     return rc;
+// }
