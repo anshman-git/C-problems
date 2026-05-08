@@ -4836,3 +4836,19 @@
 //     }
 //     return rc;
 // }
+
+// 200
+// Count digit appeareance
+// int countDigitOccurrences(int* nums, int numsSize, int digit) {
+//     int dig,num,cou=0;
+    
+//     for(int i=0;i<numsSize;i++) {
+//         num=nums[i];
+//         while(num!=0) {
+//             dig=num%10;
+//             num=num/10;
+//             if(dig==digit) cou++;
+//         }
+//     }
+//     return cou;
+// }
