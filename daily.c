@@ -5199,3 +5199,35 @@
 //     }
 //     return cou;
 // }
+
+// 201
+// Thousand Counter (leetcode 1556)
+
+// char* thousandSeparator(int n) {
+//     char temp[15];
+//     sprintf(temp, "%d", n);
+//     int len=strlen(temp);
+    
+//     int dots=(len-1) / 3;
+//     int nl=len+dots;
+    
+//     char *res=(char*)malloc((nl+ 1)*sizeof(char));
+//     if (res == NULL) return NULL;
+    
+//     res[nl]='\0';
+    
+//     int src=len - 1;
+//     int dest=nl - 1;
+//     int count=0;
+    
+//     while (src>=0) {
+//         if (count==3) {
+//             res[dest--]='.';
+//             count=0;
+//         }
+//         res[dest--]=temp[src--];
+//         count++;
+//     }
+    
+//     return res;
+// }
