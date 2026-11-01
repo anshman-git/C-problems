@@ -40,7 +40,7 @@
 
 
 // 4
-//area of a circle
+//area of a cir
 // int main() {
 //     float r;
 //     printf("enter the radius of a circle:");
